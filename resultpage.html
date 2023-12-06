@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>resultdraft</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/bg-result.css">
     <link rel="stylesheet" href="assets/css/button.css">
     <link rel="stylesheet" href="assets/css/resultpage.css">
@@ -27,64 +26,72 @@
             <div class="row align-items-center pt-5">
                 <div class="col-md-8 text-center text-md-start mx-auto">
                     <div class="text-center">
-                        <h1 class="display-4 fw-bold mb-5"><span class="underline-thick">TOP THREE</span><span>STRAND RECOMMENDATION</span>.</h1>
+                        <h1 class="display-4 fw-bold mb-5"><span class="underline-thick">TOP THREE</span><span>&nbsp;STRAND RECOMMENDATION</span>.</h1>
                         <p class="fs-5 text-muted mb-5">It indicates here the selection of three suggestions based on specific criteria or results. These recommendations are derived from a particular evaluation process, highlighting the best choices according to set standards or analysis.</p>
                     </div>
                 </div>
             </div>
             <div class="row row-cols-1 row-cols-md-2 mx-auto" id="row-strands">
                 <div class="col mb-5"><img class="float-start" id="numbers" src="assets/img/numbers/1.png">
-                    <div class="card bg-light shadow h-100 border rounded"><a href="#"><img class="img-fluid strand w-80" src="assets/img/strands/STEM.jpg"></a></div>
+                    <div class="card bg-light shadow h-100 border rounded"><a href="#"><img class="img-fluid strand w-80 h-80 top1" id="strands" src="assets/img/strands/STEM.jpg"></a></div>
                 </div>
                 <div class="col d-md-flex align-items-md-end align-items-lg-center mb-5">
                     <div>
                         <h5 class="fw-bold">STEM</h5>
-                        <p class="text-muted mb-4"><strong>STEM strand: Focuses on science, technology, engineering, and math for future careers or higher education in these fields.</strong></p><button class="btn btn-warning btn-xl shadow" type="button">Read more &gt;&gt;</button>
+                        <p class="text-muted mb-4"><strong>STEM strand: Focuses on science, technology, engineering, and math for future careers or higher education in these fields.</strong></p><button class="btn btn-warning btn-l shadow " type="button" style="font-size: 0.75rem;">Read more &gt;&gt;</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <section>
-        <div class="container py-5">
-            <div class="row row-cols-1 row-cols-md-2 mx-auto" id="row-strands" style="max-width: 900px;">
-                <div class="col order-md-last mb-5"><img class="float-start" id="numbers" src="assets/img/numbers/2.png">
-                    <div class="card bg-light shadow h-100 border rounded"><a href="#"><img class="img-fluid strand w-80" src="assets/img/strands/humms1.jpg"></a></div>
-                </div>
-                <div class="col d-md-flex align-items-md-end align-items-lg-center mb-5">
-                    <div>
-                        <h5 class="fw-bold">HUMSS</h5>
-                        <p class="text-muted mb-4">Explores society, culture, and human behavior through subjects like literature, economics, sociology, psychology, and political science.</p><button class="btn btn-warning btn-xl shadow" type="button">Read more &gt;&gt;</button>
-                    </div>
-                </div>
-            </div>
-            <div class="row row-cols-1 row-cols-md-2 mx-auto" id="row-strands">
-                <div class="col mb-5"><img class="float-start" id="numbers" src="assets/img/numbers/3.png">
-                    <div class="card bg-light shadow h-100 border rounded"><a href="#"><img class="img-fluid strand w-80" src="assets/img/strands/5.jpg"></a></div>
-                </div>
-                <div class="col d-md-flex align-items-md-end align-items-lg-center mb-5">
-                    <div>
-                        <h5 class="fw-bold">ABM</h5>
-                        <p class="text-muted mb-4">Focuses on business, finance, and entrepreneurship skills for future careers.</p><button class="btn btn-warning btn-xl shadow" type="button">Read more &gt;&gt;</button>
-                    </div>
+        <div class="container"><div class="row pt-xl-5">
+    <div class="col-lg-4 col-xl-4 offset-lg-2 offset-xl-2 mb-3">
+        <!-- Left side content -->
+        <div class="text-center">
+            <img id="numbers" class="float-start" src="assets/img/numbers/2.png" />
+            <div class="card bg-light shadow border rounded">
+                <img id="strands" class="card-img-top w-100 d-block card-img-top w-100" src="assets/img/strands/humms1.jpg" />
+                <div class="card-body">
+                    <p class="card-text">The HUMSS strand explores society, culture, and human behavior through subjects like literature, economics, sociology, psychology, and political science.</p>
+                    <button class="btn btn-warning btn-sm shadow float-end" type="button" style="font-size: 0.75rem;">Read more &gt;&gt;</button>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="py-4 py-xl-5" style="background: #fdff89;">
-        <div class="container"><div class="bg-custom-color border rounded border-0 border-primary overflow-hidden">
-    <div class="row g-0">
-        <div class="col-md-6 d-flex flex-column justify-content-center">
-            <div class="text-white p-4 p-md-5">
-                <h2 class="fw-bold mb-3">Ut semper sed, aptent taciti conubia.</h2>
-                <p class="mb-4">Tincidunt laoreet leo, adipiscing taciti tempor. Primis senectus sapien, risus donec ad fusce augue interdum.</p>
-                <div class="my-3"></div>
+    </div>
+    <div class="col-lg-4 col-xl-4 mb-3">
+        <!-- Right side content -->
+        <div class="text-center">
+            <img id="numbers" class="float-start" src="assets/img/numbers/3.png" />
+            <div class="card bg-light shadow border rounded">
+                <img id="strands" class="card-img-top w-100 d-block" src="assets/img/strands/5.jpg" width="385" height="385" />
+                <div class="card-body">
+                    <p class="card-text">The ABM strand provides an understanding of accounting, finance, marketing, and entrepreneurial skills crucial for future careers in commerce, finance, and entrepreneurship.</p>
+                    <button class="btn btn-warning btn-sm shadow float-end" type="button" style="font-size: 0.75rem;">Read more &gt;&gt;</button>
+                </div>
             </div>
         </div>
-        <div class="col-md-6 order-first order-md-last" style="min-height: 250px;"><img class="w-100 h-100 fit-contain pt-5 pt-md-0" src="assets/img/illustrations/web-development.svg" /></div>
     </div>
 </div>
 </div>
+    </section>
+    <section class="py-4 py-xl-5" style="background: linear-gradient(15deg, #fdff89, white), #fdff89;">
+        <div class="container">
+            <div class="border-0 border-primary bg-custom-color border rounded overflow-hidden">
+                <div class="row g-0">
+                    <div class="col-md-6 d-flex flex-column justify-content-center">
+                        <div class="text-black p-4 p-md-5">
+                            <h2 class="fw-bold mb-3">RADAR CHART&nbsp;</h2>
+                            <p class="mb-4" style="text-align: justify;">The Radar Chart in the RIASEC test is a visual tool used to represent an individual's interests in different job-related categories. It displays your preferences across six key areas: Realistic, Investigative, Artistic, Social, Enterprising, and Conventional (RIASEC). Each area forms a point on the chart, and the distance from the center to the point indicates the level of interest in that category. It helps identify your preferences and potential career paths based on those preferences.</p>
+                            <div class="my-3"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 order-first order-md-last" style="min-height:250px;">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <section class="py-4 py-xl-5 persona-section">
         <div class="container">
@@ -103,67 +110,26 @@
         </div>
     </section>
     <section></section>
-    <section class="portfolio-block skills">
+    <section class="bg-light" id="team">
         <div class="container">
-            <div class="heading">
-                <h2>Special Skills</h2>
-            </div>
+            <h2 class="mb-5" style="text-align: center;">What people are saying...</h2>
             <div class="row">
-                <div class="col-md-4">
-                    <div class="card special-skill-item border-0">
-                        <div class="card-header bg-transparent border-0"><i class="icon ion-ios-star-outline"></i></div>
-                        <div class="card-body">
-                            <h3 class="card-title">Web Design</h3>
-                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-                        </div>
+                <div class="col-sm-4">
+                    <div class="text-center"><img class="rounded-circle" id="small-image" src="assets/img/speakers/jack%20ma.jpg">
+                        <h4>Jack Ma</h4>
+                        <p class="text-muted">If you're never tried, how will you ever know if there's any chance?&nbsp;&nbsp;</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card special-skill-item border-0">
-                        <div class="card-header bg-transparent border-0"><i class="icon ion-ios-lightbulb-outline"></i></div>
-                        <div class="card-body">
-                            <h3 class="card-title">Interface Design</h3>
-                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-                        </div>
+                <div class="col-sm-4">
+                    <div class="text-center"><img class="rounded-circle" id="small-image" src="assets/img/speakers/shiv%20khera.png">
+                        <h4>Shiv Kera</h4>
+                        <p class="text-muted">Your positive action combined with positive thinking results in success.&nbsp;</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card special-skill-item border-0">
-                        <div class="card-header bg-transparent border-0"><i class="icon ion-ios-gear-outline"></i></div>
-                        <div class="card-body">
-                            <h3 class="card-title">Photography and Print</h3>
-                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section style="background: #e2fff6;">
-        <div class="container py-5">
-            <h2 class="mb-5">What people are saying...</h2>
-            <div class="mx-auto" style="max-width: 900px;">
-                <div class="row row-cols-1 row-cols-md-2 d-flex justify-content-center">
-                    <div class="col mb-4">
-                        <div class="card bg-primary-light">
-                            <div class="card-body text-center px-4 py-5 px-md-5"><img class="rounded-circle img-fluid mb-3" src="testimonials-2.jpg">
-                                <h5 class="fw-bold card-title mb-3">Lorem ipsum dolor sit&nbsp;nullam et quis ad cras porttitor</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-4">
-                        <div class="card bg-secondary-light">
-                            <div class="card-body text-center px-4 py-5 px-md-5"><img class="rounded-circle img-fluid mb-3" src="testimonials-2.jpg">
-                                <h5 class="fw-bold card-title mb-3">Lorem ipsum dolor sit&nbsp;nullam et quis ad cras porttitor</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-4">
-                        <div class="card bg-info-light">
-                            <div class="card-body text-center px-4 py-5 px-md-5"><img class="rounded-circle img-fluid mb-3" src="testimonials-2.jpg">
-                                <h5 class="fw-bold card-title mb-3">Lorem ipsum dolor sit&nbsp;nullam et quis ad cras porttitor</h5>
-                            </div>
-                        </div>
+                <div class="col-sm-4">
+                    <div class="text-center"><img class="rounded-circle" id="small-image" src="assets/img/team/2.jpg">
+                        <h4>Diana Pertersen</h4>
+                        <p class="text-muted">Lead Developer</p>
                     </div>
                 </div>
             </div>
