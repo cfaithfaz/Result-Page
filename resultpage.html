@@ -11,6 +11,58 @@
   <link rel="stylesheet" href="assets/css/resultpage.css">
 </head>
 
+<style>
+  .gradient-animator {
+    background: linear-gradient(235deg, #cefff3, #78ffde);
+    background-size: 400% 400%;
+    -webkit-animation: GradientAnim 6s ease infinite;
+    -moz-animation: GradientAnim 6s ease infinite;
+    animation: GradientAnim 6s ease infinite;
+  }
+
+  @-webkit-keyframes GradientAnim {
+    0% {
+      background-position: 0% 82%
+    }
+
+    50% {
+      background-position: 100% 19%
+    }
+
+    100% {
+      background-position: 0% 82%
+    }
+  }
+
+  @-moz-keyframes GradientAnim {
+    0% {
+      background-position: 0% 82%
+    }
+
+    50% {
+      background-position: 100% 19%
+    }
+
+    100% {
+      background-position: 0% 82%
+    }
+  }
+
+  @keyframes GradientAnim {
+    0% {
+      background-position: 0% 82%
+    }
+
+    50% {
+      background-position: 100% 19%
+    }
+
+    100% {
+      background-position: 0% 82%
+    }
+  }
+</style>
+
 <body>
   <nav class="navbar navbar-expand-md sticky-top bg-body py-2 navbar-light"
     style="box-shadow: 0px 1px 12px rgb(108,108,108);border-bottom-color: rgb(98,98,98);">
@@ -24,7 +76,7 @@
       </div>
     </div>
   </nav>
-  <section style="background: linear-gradient(-31deg, #a4ffe9, white 100%);">
+  <section class="gradient-animator">
     <div class="container pt-4 pt-xl-5">
       <div class="row align-items-center pt-5">
         <div class="col-md-8 text-center text-md-start mx-auto">
