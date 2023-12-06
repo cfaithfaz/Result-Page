@@ -1,0 +1,28 @@
+/* Add or modify these styles in your existing CSS file */
+
+#img-persona-result {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Adjustments for screens up to 767px wide */
+
+@media screen and (max-width: 767px) {
+  .col-md-6.order-first.order-md-last {
+    min-height: auto;
+  }
+}
+
+/* Adjustments for screens up to 360px wide */
+
+@media screen and (max-width: 360px) {
+  .py-4.py-xl-5 {
+    padding-top: 40px;
+    background-position: center top;
+    background-size: cover;
+  }
+}
+
