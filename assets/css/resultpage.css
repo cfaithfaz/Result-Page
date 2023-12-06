@@ -103,3 +103,17 @@
   width: 450px;
 }
 
+.underline-thick {
+  text-decoration: underline;
+  text-decoration-color: aqua;
+}
+
+.bg-custom-color {
+  background-color: #ffffff;
+}
+
+#row-strands {
+  max-width: 900px;
+  height: 400px;
+}
+
