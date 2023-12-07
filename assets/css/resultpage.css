@@ -93,11 +93,6 @@
   float: left!important;
 }
 
-.card {
-  /*display: flex;*/
-  /*flex-direction: column;*/
-}
-
 #strands {
   height: 400px;
   width: 450px;
@@ -105,7 +100,7 @@
 
 .underline-thick {
   text-decoration: underline;
-  text-decoration-color: aqua;
+  text-decoration-color: #07b5ff;
 }
 
 .bg-custom-color {

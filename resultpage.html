@@ -2,349 +2,137 @@
 <html data-bs-theme="light" lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <title>resultdraft</title>
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/bg-result.css">
-  <link rel="stylesheet" href="assets/css/button.css">
-  <link rel="stylesheet" href="assets/css/resultpage.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>resultdraft</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Actor">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/bg-result.css">
+    <link rel="stylesheet" href="assets/css/button.css">
+    <link rel="stylesheet" href="assets/css/Profile-Card.css">
+    <link rel="stylesheet" href="assets/css/resultpage.css">
+    <link rel="stylesheet" href="assets/css/stem.css">
 </head>
 
-<style>
-  .gradient-animator {
-    background: linear-gradient(235deg, #cefff3, rgb(255, 254, 188));
-    background-size: 400% 400%;
-    -webkit-animation: GradientAnim 6s ease infinite;
-    -moz-animation: GradientAnim 6s ease infinite;
-    animation: GradientAnim 6s ease infinite;
-  }
-
-  @-webkit-keyframes GradientAnim {
-    0% {
-      background-position: 0% 82%
-    }
-
-    50% {
-      background-position: 100% 19%
-    }
-
-    100% {
-      background-position: 0% 82%
-    }
-  }
-
-  @-moz-keyframes GradientAnim {
-    0% {
-      background-position: 0% 82%
-    }
-
-    50% {
-      background-position: 100% 19%
-    }
-
-    100% {
-      background-position: 0% 82%
-    }
-  }
-
-  @keyframes GradientAnim {
-    0% {
-      background-position: 0% 82%
-    }
-
-    50% {
-      background-position: 100% 19%
-    }
-
-    100% {
-      background-position: 0% 82%
-    }
-  }
-
-  
-</style>
-
 <body>
-  <nav class="navbar navbar-expand-md sticky-top bg-body py-2 navbar-light"
-    style="box-shadow: 0px 1px 12px rgb(108,108,108);border-bottom-color: rgb(98,98,98);">
-    <div class="container"><img src="assets/img/random/logo.png" width="240" height="83"><button
-        data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span
-          class="navbar-toggler-icon"></span></button>
-      <div class="collapse navbar-collapse" id="navcol-2" style="margin-left: 550px;">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="#">Login&nbsp;</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <section class="gradient-animator">
-    <div class="container pt-4 pt-xl-5">
-      <div class="row align-items-center pt-5">
-        <div class="col-md-8 text-center text-md-start mx-auto">
-          <div class="text-center">
-            <h1 class="display-4 fw-bold mb-5"><span class="underline-thick">TOP THREE</span><span>&nbsp;STRAND
-                RECOMMENDATION</span>.</h1>
-            <p class="fs-5 text-muted mb-5">It indicates here the selection of three suggestions based on specific
-              criteria or results. These recommendations are derived from a particular evaluation process, highlighting
-              the best choices according to set standards or analysis.</p>
-          </div>
-        </div>
-      </div>
-      <div class="row row-cols-1 row-cols-md-2 mx-auto" id="row-strands">
-        <div class="col mb-5"><img class="float-start" id="numbers" src="assets/img/numbers/1.png">
-          <div class="card bg-light shadow h-100 border rounded"><a href="#"><img
-                class="img-fluid strand w-80 h-80 top1" id="strands" src="assets/img/strands/STEM.jpg"></a></div>
-        </div>
-        <div class="col d-md-flex align-items-md-end align-items-lg-center mb-5">
-          <div>
-            <h5 class="fw-bold">STEM</h5>
-            <p class="text-muted mb-4"><strong>STEM strand: Focuses on science, technology, engineering, and math for
-                future careers or higher education in these fields.</strong></p><button
-              class="btn btn-warning btn-l shadow " type="button" style="font-size: 0.75rem;">Read more
-              &gt;&gt;</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section>
-    <div class="container">
-      <div class="row pt-xl-5">
-        <div class="col-lg-4 col-xl-4 offset-lg-2 offset-xl-2 mb-3">
-          <!-- Left side content -->
-          <div class="text-center">
-            <img id="numbers" class="float-start" src="assets/img/numbers/2.png" />
-            <div class="card bg-light shadow border rounded">
-              <img id="strands" class="card-img-top w-100 d-block card-img-top w-100"
-                src="assets/img/strands/humms1.jpg" />
-              <div class="card-body">
-                <p class="card-text">The HUMSS strand explores society, culture, and human behavior through subjects
-                  like literature, economics, sociology, psychology, and political science.</p>
-                <button class="btn btn-warning btn-sm shadow float-end" type="button" style="font-size: 0.75rem;">Read
-                  more &gt;&gt;</button>
-              </div>
+    <nav class="navbar navbar-expand-md sticky-top bg-body py-2 navbar-light" style="box-shadow: 0px 1px 12px rgb(108,108,108);border-bottom-color: rgb(98,98,98);">
+        <div class="container"><img src="assets/img/random/logo.png" width="240" height="83"><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-2" style="margin-left: 550px;">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Login&nbsp;</a></li>
+                </ul>
             </div>
-          </div>
         </div>
-        <div class="col-lg-4 col-xl-4 mb-3">
-          <!-- Right side content -->
-          <div class="text-center">
-            <img id="numbers" class="float-start" src="assets/img/numbers/3.png" />
-            <div class="card bg-light shadow border rounded">
-              <img id="strands" class="card-img-top w-100 d-block" src="assets/img/strands/5.jpg" width="385"
-                height="385" />
-              <div class="card-body">
-                <p class="card-text">The ABM strand provides an understanding of accounting, finance, marketing, and
-                  entrepreneurial skills crucial for future careers in commerce, finance, and entrepreneurship.</p>
-                <button class="btn btn-warning btn-sm shadow float-end" type="button" style="font-size: 0.75rem;">Read
-                  more &gt;&gt;</button>
-              </div>
+    </nav>
+    <section class="gradient-animator">
+        <div class="container pt-4 pt-xl-5">
+            <div class="row align-items-center pt-5">
+                <div class="col-md-8 text-center text-md-start mx-auto">
+                    <div class="text-center">
+                        <h1 class="display-4 fw-bold mb-5"><span class="underline-thick">TOP THREE</span><span>&nbsp;STRAND RECOMMENDATION</span>.</h1>
+                        <p class="fs-5 text-muted mb-5">It indicates here the selection of three suggestions based on specific criteria or results. These recommendations are derived from a particular evaluation process, highlighting the best choices according to set standards or analysis.</p>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="py-4 py-xl-5" style="background: linear-gradient(15deg, #fdff89, white), #fdff89;">
-    <div class="container">
-      <div class="border-0 border-primary bg-custom-color border rounded overflow-hidden">
-        <div class="row g-0">
-          <div class="col-md-6 d-flex flex-column justify-content-center">
-            <div class="text-black p-4 p-md-5">
-              <h2 class="fw-bold mb-3">RADAR CHART&nbsp;</h2>
-              <p class="mb-4" style="text-align: justify;">The Radar Chart in the RIASEC test is a visual tool used to
-                represent an individual's interests in different job-related categories. It displays your preferences
-                across six key areas: Realistic, Investigative, Artistic, Social, Enterprising, and Conventional
-                (RIASEC). Each area forms a point on the chart, and the distance from the center to the point indicates
-                the level of interest in that category. It helps identify your preferences and potential career paths
-                based on those preferences.</p>
-              <div class="my-3"></div>
+            <div class="row row-cols-1 row-cols-md-2 mx-auto" id="row-strands">
+                <div class="col mb-5"><img class="float-start" id="numbers" src="assets/img/numbers/1.png">
+                    <div class="card bg-light shadow h-100 border rounded"><a href="#"><img class="img-fluid strand w-80 h-80 top1" id="strands" src="assets/img/strands/STEM.jpg"></a></div>
+                </div>
+                <div class="col d-md-flex align-items-md-end align-items-lg-center mb-5">
+                    <div>
+                        <h5 class="fw-bold">STEM</h5>
+                        <p class="text-muted mb-4">STEM strand: Focuses on science, technology, engineering, and math for future careers or higher education in these fields.</p><button class="btn btn-warning shadow btn-l" type="button" style="font-size:0.75rem;">Read more &gt;&gt;</button>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-md-6 order-first order-md-last" style="min-height:250px;">
-            
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/1.2.2/chartjs-plugin-annotation.js"></script>
-  <div class="mt-3 container">
-    <div class="row justify-content-center">
-      <canvas id="myChart" class='w-50 h-50'></canvas>
-    </div>
-  </div>
-
-  <script>
-
-    const ctx = document.getElementById('myChart');
-    const labels = [
-      'Realistic',
-      'Investigative',
-      'Artistic',
-      'Social',
-      'Enterprising',
-      'Conventional',
-    ]
-    const bgprops = {
-      borderColor: '#cccccc',
-      borderWidth: 1,
-      pointRadius: 0,
-      fill: '-1',
-      animation: {
-        duration: 0
-      }
-
-    }
-    const data = {
-      labels: labels,
-      datasets: [
-        {
-          label: 'Line',
-          data: [65, 59, 90, 81, 56, 55],
-
-          fill: true,
-          backgroundColor: 'rgba(255, 99, 132, 0.2)',
-          borderColor: 'rgb(255, 99, 132)',
-          pointBackgroundColor: 'rgb(255, 99, 132)',
-          pointBorderColor: '#fff',
-          pointHoverBackgroundColor: '#fff',
-          pointHoverBorderColor: 'rgb(255, 99, 132)'
-        },
-        {
-          backgroundColor: '#f2f2f2',
-          data: [20, 20, 20, 20, 20, 20],
-          ...bgprops,
-          fill: true
-        },
-        {
-          backgroundColor: '#ffffff',
-          data: [40, 40, 40, 40, 40, 40],
-          ...bgprops
-        },
-        {
-          backgroundColor: '#f2f2f2',
-          data: [60, 60, 60, 60, 60, 60],
-          ...bgprops
-        },
-        {
-          backgroundColor: '#ffffff',
-          data: [80, 80, 80, 80, 80, 80],
-          ...bgprops
-        },
-        {
-          backgroundColor: '#f2f2f2',
-          data: [100, 100, 100, 100, 100, 100],
-          ...bgprops
-        },
-      ]
-    };
-    const config = {
-      type: 'radar',
-      data: data,
-      options: {
-        elements: {
-          line: {
-            borderWidth: 3
-          },
-        },
-        plugins: {
-          legend: {
-            display: false
-          },
-          // annotation: {
-          //   annotations: {
-          //     pentagon: {
-          //       type: 'polygon',
-          //       xScaleID: 'x',
-          //       yScaleID: 'y',
-          //       xMin: 0.5,
-          //       xMax: 0.5,
-          //       xValue: 1,
-          //       yValue: 100,
-          //       sides: 6,
-          //       radius: parseFloat(getComputedStyle(ctx).fontSize),
-          //       backgroundColor: 'rgba(255, 99, 132, 0.25)'
-          //     }
-          //   },
-          // },
-        },
-        scales: {
-          r: {
-            min: 0, max: 100,
-            ticks: {
-              showLabelBackdrop: false,
-              z: 100,
-              stepSize: 20,
-              padding: 6
-
-            }
-          }
-        }
-      },
-
-    };
-
-    const myChart = new Chart(ctx, config);
-    console.log(parseFloat(getComputedStyle(ctx).fontSize))
-  </script>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <section class="py-4 py-xl-5 persona-section">
-    <div class="container">
-      <div class="border-0 border-primary border rounded overflow-hidden">
-        <div class="row g-0">
-          <div class="col-md-6 d-flex flex-column justify-content-center">
-            <div class="text-white p-4 p-md-5">
-              <h2 class="persona-result"
-                style="padding-bottom: 0px;margin-bottom: 0px;padding-top: 0px;margin-top: 0px;"><strong>You are
-                  Thinker</strong></h2>
-              <p class="persona-mean" style="padding: 0; margin: 0"><br /><span> Your curiosity is your biggest
-                  strength. You like learning about how things work, how certain events happened and entertaining the
-                  possibilities of &quot; What If&quot;. You constantly seek knowledge and enjoy exploring various
-                  subjects, theories and concepts.                                  </span><br /><span>     
-                  Your  journey as &quot;The Thinker&quot; is an exciting one, filled with continuous learning, growth,
-                  and the excitement of unraveling the mysteries of the world. Embrace your curiosity and let it guide
-                  you towards a fulfilling and intellectually stimulating path.</span><br /><br /></p>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row pt-xl-5">
+                <div class="col-lg-4 col-xl-4 offset-lg-2 offset-xl-2 mb-3">
+                    <div class="text-center"><img class="float-start" id="numbers" src="assets/img/numbers/2.png">
+                        <div class="card bg-light shadow border rounded"><img class="card-img-top w-100 d-block card-img-top w-100 card-img-top w-100" id="strands" src="assets/img/strands/humms1.jpg">
+                            <div class="card-body">
+                                <p class="card-text">The HUMSS strand explores society, culture, and human behavior through subjects like literature, economics, sociology, psychology, and political science.</p><button class="btn btn-warning btn-sm shadow float-end" type="button" style="font-size:0.75rem;">Read more &gt;&gt;</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-xl-4 mb-3">
+                    <div class="text-center"><img class="float-start" id="numbers" src="assets/img/numbers/3.png">
+                        <div class="card bg-light shadow border rounded"><img class="card-img-top w-100 d-block card-img-top w-100" id="strands" src="assets/img/strands/5.jpg" width="385" height="385">
+                            <div class="card-body">
+                                <p class="card-text">The ABM strand provides an understanding of accounting, finance, marketing, and entrepreneurial skills crucial for future careers in commerce, finance, and entrepreneurship.</p><button class="btn btn-warning btn-sm shadow float-end" type="button" style="font-size:0.75rem;">Read more &gt;&gt;</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-md-6 order-first order-md-last persona-image">
-            <div><img id="img-persona-result" class="w-100 h-100 fit-contain pt-5 pt-md-0"
-                src="assets/img/strands/stemstud.png"></div>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <section></section>
-  <section class="bg-light" id="team">
-    <div class="container">
-      <h2 class="mb-5" style="text-align: center;">What people are saying...</h2>
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="text-center"><img class="rounded-circle" id="small-image" src="assets/img/speakers/jack%20ma.jpg">
-            <h4>Jack Ma</h4>
-            <p class="text-muted">If you're never tried, how will you ever know if there's any chance?&nbsp;&nbsp;</p>
-          </div>
+    </section>
+    <section class="py-4 py-xl-5" style="background: linear-gradient(15deg, #fdff89, white), #fdff89;">
+        <div class="container">
+            <div class="border-0 border-primary bg-custom-color border rounded overflow-hidden">
+                <div class="row g-0">
+                    <div class="col-md-6 d-flex flex-column justify-content-center">
+                        <div class="text-black p-4 p-md-5">
+                            <h2 class="fw-bold mb-3">RADAR CHART&nbsp;</h2>
+                            <p class="mb-4" style="text-align: justify;">The Radar Chart in the RIASEC test is a visual tool used to represent an individual's interests in different job-related categories. It displays your preferences across six key areas: Realistic, Investigative, Artistic, Social, Enterprising, and Conventional (RIASEC). Each area forms a point on the chart, and the distance from the center to the point indicates the level of interest in that category. It helps identify your preferences and potential career paths based on those preferences.</p>
+                            <div class="my-3"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 order-first order-md-last" style="min-height:250px;">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-sm-4">
-          <div class="text-center"><img class="rounded-circle" id="small-image"
-              src="assets/img/speakers/shiv%20khera.png">
-            <h4>Shiv Kera</h4>
-            <p class="text-muted">Your positive action combined with positive thinking results in success.&nbsp;</p>
-          </div>
+    </section>
+    <section class="py-4 py-xl-5 persona-section">
+        <div class="container">
+            <div class="border-0 border-primary border rounded overflow-hidden">
+                <div class="row g-0">
+                    <div class="col-md-6 d-flex flex-column justify-content-center">
+                        <div class="text-white p-4 p-md-5">
+                            <h2 class="persona-result" style="padding-bottom: 0px;margin-bottom: 0px;padding-top: 0px;margin-top: 0px;"><strong>You are Thinker</strong></h2><p class="persona-mean" style ="padding: 0; margin: 0"><br/><span>      Your curiosity is your biggest strength. You like learning about how things work, how certain events happened and entertaining the possibilities of &quot; What If&quot;. You constantly seek knowledge and enjoy exploring various subjects, theories and concepts.                                  </span><br/><span>         Your  journey as &quot;The Thinker&quot; is an exciting one, filled with continuous learning, growth, and the excitement of unraveling the mysteries of the world. Embrace your curiosity and let it guide you towards a fulfilling and intellectually stimulating path.</span><br/><br /></p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 order-first order-md-last persona-image">
+                        <div><img id="img-persona-result" class="w-100 h-100 fit-contain pt-5 pt-md-0" src="assets/img/strands/stemstud.png"></div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-sm-4">
-          <div class="text-center"><img class="rounded-circle" id="small-image" src="assets/img/team/2.jpg">
-            <h4>Diana Pertersen</h4>
-            <p class="text-muted">Lead Developer</p>
-          </div>
+    </section>
+    <section></section>
+    <section class="bg-light" id="team">
+        <div class="container">
+            <h2 class="mb-5" style="text-align: center;">Testimonials: What People Are Saying...</h2>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="text-center"><img class="rounded-circle" id="small-image" src="assets/img/speakers/jack%20ma.jpg">
+                        <h4>Jack Ma</h4>
+                        <p class="text-muted">If you're never tried, how will you ever know if there's any chance?&nbsp;&nbsp;</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="text-center"><img class="rounded-circle" id="small-image" src="assets/img/speakers/shiv%20khera.png">
+                        <h4>Shiv Kera</h4>
+                        <p class="text-muted">Your positive action combined with positive thinking results in success.&nbsp;</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="text-center"><img class="rounded-circle" id="small-image" src="assets/img/team/2.jpg">
+                        <h4>Diana Pertersen</h4>
+                        <p class="text-muted">Lead Developer</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    </section>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>
