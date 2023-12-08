@@ -10,9 +10,13 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand&amp;display=swap">
     <link rel="stylesheet" href="assets/css/bg-result.css">
     <link rel="stylesheet" href="assets/css/button.css">
-    <link rel="stylesheet" href="assets/css/Profile-Card.css">
     <link rel="stylesheet" href="assets/css/resultpage.css">
     <link rel="stylesheet" href="assets/css/stem.css">
+    <link rel="stylesheet" href="assets/css/bg-animate.css">
+    <script src="assets/js/chart-config.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/1.2.2/chartjs-plugin-annotation.js"></script>
+
 </head>
 
 <body>
@@ -83,14 +87,13 @@
                     </div>
                 </div>
                 <div class="col-md-6 order-first order-md-last" style="min-height: 250px;">
-                    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/1.2.2/chartjs-plugin-annotation.js"></script>
-                    <div class="mt-3 container">
-                        <div class="row justify-content-center">
-                            <canvas id="myChart" class="w-50 h-50"></canvas>
-                        </div>
-                    </div>
-                </div>
+                  <div class="mt-3 container">
+                      <div class="row justify-content-center">
+                        <canvas id="myChart"></canvas>
+                          <!--<script src="path/to/chart-config.js"></script>-->
+                      </div>
+                  </div>
+              </div>
             </div>
         </div>
     </div>
