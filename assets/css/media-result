@@ -1,0 +1,20 @@
+@media (max-width: 576px) {
+    #strands {
+      width: 5%;
+    }
+  }
+  
+  @media screen and (min-width: 577px) and (max-width: 991px) {
+   #strands {
+      width: 70%;
+      height: 55%;
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    #strands {
+      width: 90%;
+      height: 75%;
+    }
+  }
+  
