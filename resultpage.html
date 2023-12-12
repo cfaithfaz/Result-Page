@@ -13,21 +13,12 @@
   <link rel="stylesheet" href="assets/css/resultpage.css">
   <link rel="stylesheet" href="assets/css/stem.css">
   <link rel="stylesheet" href="assets/css/bg-animate.css">
+  <link rel="stylesheet" href="assets/scss/btnSee.scss">
   <script src="assets/js/chart-config.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/1.2.2/chartjs-plugin-annotation.js"></script>
 
-<!--
-    <style>
-      .main-container {
-        background: rgb(197, 245, 229);
-      }
-  
-      .navbar, .header-area {
-        background: rgb(197, 245, 229);
-      }
-    </style>-->
 </head>
 
 <body>
@@ -37,33 +28,42 @@
       <img src="assets/img/random/logo.png" width="240" height="83">
     </div>
   </nav>
-  
+
 
   <!--RADIR CHART -->
   <section class="py-4 py-xl-5 gradient-animator">
     <div class="container  pt-0">
-        <div class="row g-0 mb">
-          <div class="col-md-6 d-flex flex-column justify-content-center">
-            <div class="text-black p-4 p-md-5">
-              <h1 class="fw-bold" style="font-family: 'Anton', sans-serif; font-weight: bolder;">
+      <div class="row g-0 mb">
+        <div class="col-md-6 d-flex flex-column justify-content-center">
+          <div class="text-black p-4 p-md-5">
+            <h1 class="fw-bold" style="font-family: 'Anton', sans-serif; font-weight: bolder;">
               Based on your shared <br>
               <span>preferences, you are...</span>
             </h1>
+            <!--
             <button class="btn btn-warning shadow btn-l" type="link"
               style="font-size: 0.75rem;"><a href="#riasec-result" style="text-decoration: none; color: black;">See the Result
-                &gt;&gt;</a></button>
+                &gt;&gt;</a></button>-->
+
+            <a href="#riasec-result" class="cta" style="text-decoration: none; color: black;">
+              <span>See the Result</span>
+              <svg width="13px" height="10px" viewBox="0 0 13 10">
+                <path d="M1,5 L11,5"></path>
+                <polyline points="8 1 12 5 8 9"></polyline>
+              </svg>
+            </a>
           </div>
-          </div>
-          <div class="col-md-6">
-            <div class="mt-5 container">
-                <canvas id="myChart" class='w-100 h-100'></canvas>
+        </div>
+        <div class="col-md-6">
+          <div class="mt-5 container">
+            <canvas id="myChart" class='w-100 h-100'></canvas>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-    <!--RIASEC RESULT-->
+  <!--RIASEC RESULT-->
 
   <section id="riasec-result" class="py-5">
     <div class="container py-5">
@@ -73,8 +73,10 @@
             <img class="card-img-top rounded img-fluid shadow" src="assets/img/riasec/1.png" alt="Investigative">
             <div class="card-body">
               <h5 class="card-title fw-bold">Investigative</h5>
-              <p class="card-text text-muted">You like to think and observe rather than act. You are a thinker who thoroughly observes your 
-                environment to learn and interpret the world around you. It makes you prefer solitary activities, scientific research, 
+              <p class="card-text text-muted">You like to think and observe rather than act. You are a thinker who
+                thoroughly observes your
+                environment to learn and interpret the world around you. It makes you prefer solitary activities,
+                scientific research,
                 and intellectual pursuits.</p>
             </div>
           </div>
@@ -84,7 +86,8 @@
             <img class="card-img-top rounded img-fluid shadow" src="assets/img/riasec/2.png" alt="Realistic">
             <div class="card-body">
               <h5 class="card-title fw-bold">Realistic</h5>
-              <p class="card-text text-muted">"Action-oriented and practical, you're inclined to solve problems through hands-on approaches.
+              <p class="card-text text-muted">"Action-oriented and practical, you're inclined to solve problems through
+                hands-on approaches.
                 You're competitive, enjoy physical activities, and are curious about science and mechanics."</p>
             </div>
           </div>
@@ -94,8 +97,9 @@
             <img class="card-img-top rounded img-fluid shadow" src="assets/img/riasec/3.png" alt="Conventional">
             <div class="card-body">
               <h5 class="card-title fw-bold">Conventional</h5>
-              <p class="card-text text-muted">You are a person who likes rules and regulations and insists on self-control. 
-                You like structure and order to prevent unpredictable environments. You place importance on reputation, power, or status.</p>
+              <p class="card-text text-muted">You are a person who likes rules and regulations and insists on
+                self-control.You like structure and order to prevent unpredictable environments. You place importance on reputation,
+                power, or status.</p>
             </div>
           </div>
         </div>
@@ -103,8 +107,8 @@
       </div>
     </div>
   </section>
-  
-  
+
+
   <!--TOP THREE STRANDS -->
 
   <section>
@@ -112,13 +116,13 @@
       <div class="row align-items-center pt-5">
         <div class="col-md-8 text-center text-md-start mx-auto">
           <div class="text-center">
-            <h1 class="display-4 mb-5" style="font-family: 'Passion One', sans-serif; font-weight: ;"><span class="underline-thick">TOP THREE</span><span>&nbsp;STRAND
+            <h1 class="display-4 mb-5" style="font-family:'Poppins', sans-serif; font-weight: ;"><span
+                class="underline-thick">TOP THREE</span><span>&nbsp;STRAND
                 RECOMMENDATION</span>.</h1>
             <p class="fs-5 text-muted mb-5">It indicates here the selection of three suggestions based on specific
-              criteria or results.
-              These recommendations are derived from a particular evaluation process, highlighting the best choices
-              according to set
-              standards or analysis.</p>
+              criteria or results.These recommendations are derived from a particular evaluation process, highlighting
+              the best choices
+              according to set standards or analysis.</p>
           </div>
         </div>
       </div>
@@ -179,7 +183,7 @@
       </div>
     </div>
   </section>
- 
+
   <!--
     <section class="py-4 py-xl-5 persona-section">
         <div class="container">
