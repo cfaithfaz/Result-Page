@@ -1,5 +1,4 @@
 
-
 document.addEventListener('DOMContentLoaded', () => {
     const ctx = document.getElementById('myChart');
     
@@ -109,9 +108,8 @@ const labels = [
       },
   
     };
-  
   const myChart = new Chart(ctx, config);
   console.log(parseFloat(getComputedStyle(ctx).fontSize));
   
-});
+});  
 
