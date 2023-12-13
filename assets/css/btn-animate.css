@@ -1,0 +1,22 @@
+:root {
+  --outline-color: #a2cbf7; /* Define the outline color variable */
+}
+
+.custom-btn {
+  font-size: 0.75rem;
+  /* Add any other specific styles you want for your button */
+  border: 2px solid cornflowerblue; /* Remove the outline */
+  transition: border-color 0.3s ease, background-color 0.3s ease; /* Add transition effects */
+}
+
+.custom-btn:hover {
+  border-color: var(--outline-color); /* New outline color on hover */
+  background-color: var(--outline-color); /* New background color on hover */
+}
+
+.custom-btn .btn-link {
+  text-decoration: none;
+  color: black;
+  /* Add any specific styles for the anchor tag inside the button */
+}
+

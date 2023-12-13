@@ -1,5 +1,5 @@
 .gradient-animator,.navbar {
-  background: linear-gradient(235deg, rgb(206, 255, 251), rgb(255, 245, 189), rgb(207, 240, 158));
+  background: linear-gradient(235deg, rgb(206, 255, 251), rgb(253, 248, 219), rgb(214, 255, 250));
   background-size: 400% 400%;
   -webkit-animation: GradientAnim 6s ease infinite;
   -moz-animation: GradientAnim 6s ease infinite;

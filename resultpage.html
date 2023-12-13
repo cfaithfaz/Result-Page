@@ -13,11 +13,14 @@
   <link rel="stylesheet" href="assets/css/resultpage.css">
   <link rel="stylesheet" href="assets/css/stem.css">
   <link rel="stylesheet" href="assets/css/bg-animate.css">
-  <link rel="stylesheet" href="assets/Sass/btnSee.scss">
+  <link rel="stylesheet" href="assets/css/btn-animate.css">
+
+  <link rel="stylesheet" href="assets/Sass/btnSee.css">
   <script src="assets/js/chart-config.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/1.2.2/chartjs-plugin-annotation.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
 </head>
 
@@ -29,21 +32,21 @@
     </div>
   </nav>
 
-
   <!--RADIR CHART -->
-  <section class="py-4 py-xl-5 gradient-animator">
-    <div class="container  pt-0">
+  <section class="py-5 py-xxl-5 gradient-animator">
+    <div class="container  pt-0 mt-0">
       <div class="row g-0 mb">
         <div class="col-md-6 d-flex flex-column justify-content-center">
-          <div class="text-black p-4 p-md-5">
-            <h1 class="fw-bold" style="font-family: 'Anton', sans-serif; font-weight: bolder;">
+          <div class="text-black m-5 p-5">
+            <h1 class="fw-bold" style="font-family: 'Peace Sans', sans-serif; font-weight: bolder;">
               Based on your shared <br>
               <span>preferences, you are...</span>
             </h1>
+
             <!--
             <button class="btn btn-warning shadow btn-l" type="link"
               style="font-size: 0.75rem;"><a href="#riasec-result" style="text-decoration: none; color: black;">See the Result
-                &gt;&gt;</a></button>-->
+                &gt;&gt;</a></button>
 
             <a href="#riasec-result" class="cta">
               <span>See the Result</span>
@@ -52,6 +55,17 @@
                 <polyline points="8 1 12 5 8 9"></polyline>
               </svg>
             </a>
+            <div class="wrapper"> <a href="#riasec-result" style="text-decoration: none; color: black;">See the Result
+              &gt;&gt;</a></div>-->
+            <div class="head mt-5" >  <button class="custom-btn btn btn-outline-primary btn-sm btn-block" type="link" style="position: relative;">
+              <a href="#riasec-result" style="text-decoration: none; color: black; display: inline-block;">
+                See the Result
+                <i class="far fa-arrow-alt-circle-right" style="font-size: 15px; vertical-align: middle; margin-left: 5px;"></i>
+              </a>
+            </button></div>
+            
+
+              
           </div>
         </div>
         <div class="col-md-6">
