@@ -7,7 +7,7 @@ function showStrand(strand) {
 
     // Generate content based on the selected strand
     if (strand === 'STEM') {
-        strandContentDiv.innerHTML = `
+        strandContentDiv.html(`
         <div class="container">
         <div class="bg"></div>
         <div class="bg bg2"></div>
@@ -138,21 +138,21 @@ function showStrand(strand) {
         </div>
     </div>
     </div>
-        `;
+        `);
     } else if (strand === 'HUMSS') {
-        strandContentDiv.innerHTML = `
+        strandContentDiv.html(`
             <!-- Content for HUMSS strand -->
             <!-- Replace with your desired content -->
             <h2>HUMSS Strand</h2>
             <p>This is the content for the HUMSS strand...</p>
-        `;
+        `);
     } else if (strand === 'ABM') {
-        strandContentDiv.innerHTML = `
+        strandContentDiv.html(`
             <!-- Content for ABM strand -->
             <!-- Replace with your desired content -->
             <h2>ABM Strand</h2>
             <p>This is the content for the ABM strand...</p>
-        `;
+        `);
     }
 
     // Show the generated content in a popup or modal
@@ -161,3 +161,37 @@ function showStrand(strand) {
     // Example using Bootstrap modal:
     $('#strandModal').modal('show'); // Show Bootstrap modal
 }
+$('.btn-open-modal').on('click', function () {
+    var strand = $(this).data('strand'); // Get the strand from the clicked button
+
+    // Set the modal title based on the strand
+    var title = getStrandTitle(strand);
+    $('#strandModalLabel').text(title);
+
+    // Show the modal
+    $('#strandModal').modal('show');
+});
+
+// Function to get the title based on the selected strand (you can modify this function based on your requirement)
+function getStrandTitle(strand) {
+    // Example titles based on different strands
+    if (strand === 'STEM') {
+        return 'Science, Technology, Engineering, and Mathematics (STEM) Strand';
+    } else if (strand === 'HUMSS') {
+        return 'Humanities and Social Sciences (HUMSS) Strand';
+    } else if (strand === 'ABM') {
+        return 'Accountancy, Business, and Management (ABM) Strand';
+    } else {
+        return 'Strand Details';
+    }
+}
+$(document).on('click', '[data-dismiss="modal"]', function () {
+    // Close the modal
+    $('#strandModal').modal('hide');
+
+    // Delay the back navigation to ensure the modal is fully closed
+    setTimeout(function() {
+        // Navigate back to the result page
+        window.history.back();
+    }, 500); // Adjust the delay timing if needed
+});
