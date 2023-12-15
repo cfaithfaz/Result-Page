@@ -1,3 +1,4 @@
+
 .persona-result {
   color: var(--bs-emphasis-color);
   font-size: 60px;
@@ -152,5 +153,100 @@
 #strands{
   font-family:'Titan One',sans-serif;
   font-weight: bold;
+}
+
+#myChart {
+  width: 500px; 
+  height: 500px;
+}
+
+
+.circle-behind {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%; 
+  height: 65%; 
+  border-radius: 50%;
+  background-color: #E5EDF5;
+  z-index: 0;
+}
+/*FIRST LAYER*/
+
+.heading{
+  font-family:'Archivo Black',sans-serif;
+  font-weight:800;
+  font-size: 40px;
+  color: #514848;
+}
+
+.first{
+  font-family: 'Archivo Narrow',sans-serif;
+  font-size: bold;
+  font-weight:400;
+  text-transform: uppercase;
+}
+
+
+.rounded-box {
+  border-radius: 45%;
+  border: 1px solid #0d8996;
+  padding: 15px;
+  background-color: #b4fffc;
+  text-align: center;
+}
+
+#riasec-result{
+
+  font-size: medium;
+  font-weight: 500; 
+}
+
+.custom-img-size {
+  width: 150%; 
+  max-width: none; 
+  height: auto; 
+}
+
+.custom-paragraph{
+  font-size: 16px;
+  padding-bottom: 10px; 
+  overflow:visible;
   
+}
+.riasec-card{
+max-width: 100%;
+margin: auto;
+
+}
+.card-body{
+
+  min-height: 100%;
+  height: auto;
+}
+
+.top-three{
+  font-family: 'Titan One', sans-serif;
+  font-weight:500;
+}
+
+.strand-reco{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: light;
+}
+
+.curved-div{
+position: relative;
+height: 260px;
+
+}
+
+.curved-div svg{
+  display: block;
+}
+
+.modal-content {
+  width: 100% !important;
+  margin: auto !important;
 }

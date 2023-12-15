@@ -8,6 +8,12 @@
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Actor">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand&amp;display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap">
+
+
   <link rel="stylesheet" href="assets/css/bg-result.css">
   <link rel="stylesheet" href="assets/css/button.css">
   <link rel="stylesheet" href="assets/css/resultpage.css">
@@ -17,10 +23,11 @@
 
   <link rel="stylesheet" href="assets/Sass/btnSee.css">
   <script src="assets/js/chart-config.js"></script>
+  <script src="assets/js/strands.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/1.2.2/chartjs-plugin-annotation.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
 </head>
 
@@ -32,107 +39,131 @@
     </div>
   </nav>
 
-  <!--RADIR CHART -->
-  <section class="py-5 py-xxl-5 gradient-animator">
-    <div class="container  pt-0 mt-0">
-      <div class="row g-0 mb">
-        <div class="col-md-6 d-flex flex-column justify-content-center">
-          <div class="text-black m-5 p-5">
-            <h1 class="fw-bold" style="font-family: 'Peace Sans', sans-serif; font-weight: bolder;">
+  <!--<section class="py-5 py-xxl-5 gradient-animator">-->
+  <section class="py-3 py-xl-3 mt-4">
+    <div class="container mt-4">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-6">
+          <div class="text-black m-5 p-5 mt-5 ">
+            <h1 class="heading pt-5">
               Based on your shared <br>
               <span>preferences, you are...</span>
             </h1>
-
-            <!--
-            <button class="btn btn-warning shadow btn-l" type="link"
-              style="font-size: 0.75rem;"><a href="#riasec-result" style="text-decoration: none; color: black;">See the Result
-                &gt;&gt;</a></button>
-
-            <a href="#riasec-result" class="cta">
-              <span>See the Result</span>
-              <svg width="15px" height="15px" viewBox="0 0 13 10">
-                <path d="M1,5 L11,5"></path>
-                <polyline points="8 1 12 5 8 9"></polyline>
-              </svg>
-            </a>
-            <div class="wrapper"> <a href="#riasec-result" style="text-decoration: none; color: black;">See the Result
-              &gt;&gt;</a></div>-->
-            <div class="head mt-5" >  <button class="custom-btn btn btn-outline-primary btn-sm btn-block" type="link" style="position: relative;">
-              <a href="#riasec-result" style="text-decoration: none; color: black; display: inline-block;">
-                See the Result
-                <i class="far fa-arrow-alt-circle-right" style="font-size: 15px; vertical-align: middle; margin-left: 5px;"></i>
-              </a>
-            </button></div>
-            
-
-              
+            <div class="mt-5 ">
+              <h1 class="first">Investigative</h1>
+              <p style="font-size: medium;">You like to think and observe rather than act. You are a thinker who
+                thoroughly observes your environment to learn and interpret the world around you.
+                It makes you prefer solitary activities,
+                scientific research,and intellectual pursuits.</p>
+            </div>
+            <div class="head mt-5">
+              <button class="custom-btn btn btn-outline-primary btn-sm btn-block" type="link"
+                style="position: relative;">
+                <a href="#riasec-result" style="text-decoration: none; color: black; display: inline-block;">
+                  See the Result
+                  <i class="far fa-arrow-alt-circle-right"
+                    style="font-size: 15px; vertical-align: middle; margin-left: 5px;"></i>
+                </a>
+              </button>
+            </div>
           </div>
         </div>
         <div class="col-md-6">
-          <div class="mt-5 container">
-            <canvas id="myChart" class='w-100 h-100'></canvas>
+          <div class="position-relative"
+            style="background-image: url('assets/img/bg/bg1.png'); background-size: cover; background-position: center;">
+            <!--<div class="circle-behind"></div>-->
+            <div class="mt-4 p-md-4 d-flex justify-content-center align-items-center"
+              style="height: 100%; position: relative; z-index: 1;">
+              <img src="assets/img/riasec/investigative.png" alt="Investigative">
+            </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!--RIASEC RESULT-->
+  <div class="curved-div upper" style="margin-top: -100px; position: relative;">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 260" style="position: absolute; bottom: 0px; filter: drop-shadow(0px -4px 4px rgba(110, 109, 109, 0.4));">
+      <path fill="#FFB000" fill-opacity="1"
+        d="M0,128L48,144C96,160,192,192,288,202.7C384,213,480,203,576,176C672,149,768,107,864,101.3C960,96,1056,128,1152,128C1248,128,1344,96,1392,80L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+      </path>
+    </svg>
+  </div>
+  
+  <section id="riasec-result" class="mt-0" style="background-color:#FFB000">
 
-  <section id="riasec-result" class="py-5">
-    <div class="container py-5">
-      <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
-        <div class="col mb-5">
-          <div class="card h-100">
-            <img class="card-img-top rounded img-fluid shadow" src="assets/img/riasec/1.png" alt="Investigative">
-            <div class="card-body">
-              <h5 class="card-title fw-bold">Investigative</h5>
-              <p class="card-text text-muted">You like to think and observe rather than act. You are a thinker who
-                thoroughly observes your
-                environment to learn and interpret the world around you. It makes you prefer solitary activities,
-                scientific research,
-                and intellectual pursuits.</p>
+    <div class="container py-1">
+      <header>
+        <h1>
+
+        </h1>
+      </header>
+      <div class="row justify-content-center mt-5">
+        <div class="col-md-6 mb-5">
+          <div class="riasec-card card h-100">
+            <div class="row g-0">
+              <div class="col-md-6">
+                <img class="card-img-top rounded img-fluid shadow" src="assets/img/riasec/2.png" alt="Realistic">
+              </div>
+              <div class="col-md-6">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title fw-bold text-center mt-3">Realistic</h5>
+                  <p class="card-text mt-3 custom-paragraph ">Action-oriented and practical, you're inclined to solve
+                    problems through hands-on approaches.
+                    You're competitive, enjoy physical activities, and are curious about science and mechanics.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col mb-5">
-          <div class="card h-100">
-            <img class="card-img-top rounded img-fluid shadow" src="assets/img/riasec/2.png" alt="Realistic">
-            <div class="card-body">
-              <h5 class="card-title fw-bold">Realistic</h5>
-              <p class="card-text text-muted">"Action-oriented and practical, you're inclined to solve problems through
-                hands-on approaches.
-                You're competitive, enjoy physical activities, and are curious about science and mechanics."</p>
+
+        <div class="col-md-6 mb-5">
+          <div class="riasec-card card h-100">
+            <div class="row g-0">
+              <div class="col-md-6">
+                <img class="card-img-top rounded img-fluid shadow" src="assets/img/riasec/3.png" alt="Conventional">
+              </div>
+              <div class="col-md-6">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title fw-bold text-center mt-3">Conventional</h5>
+                  <p class="card-text mt-3 custom-paragraph">
+                    You are a person who likes rules and regulations and insists on self-control.
+                    You like structure and order to prevent unpredictable environments.<br>
+                    You place importance on reputation, power, or status.
+                  </p>
+
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col mb-5">
-          <div class="card h-100">
-            <img class="card-img-top rounded img-fluid shadow" src="assets/img/riasec/3.png" alt="Conventional">
-            <div class="card-body">
-              <h5 class="card-title fw-bold">Conventional</h5>
-              <p class="card-text text-muted">You are a person who likes rules and regulations and insists on
-                self-control.You like structure and order to prevent unpredictable environments. You place importance on reputation,
-                power, or status.</p>
-            </div>
-          </div>
-        </div>
-        <!-- Add more 'col' divs for additional groups -->
       </div>
     </div>
-  </section>
 
+  </section>
+  <div id="waves" style="position: relative;height: 120px;">
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"  style="filter: drop-shadow(0px 4px 4px rgba(114, 112, 112, 0.2));">
+      <path fill="#FFB000" fill-opacity="1"
+        d="M0,160L40,154.7C80,149,160,139,240,117.3C320,96,400,64,480,69.3C560,75,640,117,720,138.7C800,160,880,160,960,144C1040,128,1120,96,1200,85.3C1280,75,1360,85,1400,90.7L1440,96L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z">
+      </path>
+    </svg>
+  </div>
 
   <!--TOP THREE STRANDS -->
 
-  <section>
-    <div class="container pt-4 pt-xl-5 ">
+  <section
+  
+  
+  >
+    <div class="container pt-0 pt-xl-5 ">
       <div class="row align-items-center pt-5">
         <div class="col-md-8 text-center text-md-start mx-auto">
           <div class="text-center">
-            <h1 class="display-4 mb-5" style="font-family:'Poppins', sans-serif; font-weight: ;"><span
-                class="underline-thick">TOP THREE</span><span>&nbsp;STRAND
-                RECOMMENDATION</span>.</h1>
+            <h1 class=" display-4 mb-5"><span class="top-three underline-thick">TOP THREE</span><span
+                class="strand-reco">&nbsp;<br/>STRAND
+                RECOMMENDATION OF THE SYSTEM</span></h1>
             <p class="fs-5 text-muted mb-5">It indicates here the selection of three suggestions based on specific
               criteria or results.These recommendations are derived from a particular evaluation process, highlighting
               the best choices
@@ -140,7 +171,7 @@
           </div>
         </div>
       </div>
-      <div id="row-strands" class="row mx-auto ">
+     <!-- <div id="row-strands" class="row mx-auto ">
         <div class="col col-12 col-md-6 mb-5"><img id="numbers" class="float-start" src="assets/img/numbers/1.png" />
           <div class="card bg-light shadow border rounded"><img class="card-img-top w-100 d-block" id="strands"
               src="assets/img/strands/STEM.jpg" /></div>
@@ -154,42 +185,56 @@
                 &gt;&gt;</a></button>
           </div>
         </div>
-      </div>
+      </div>-->
     </div>
   </section>
+  
 
   <section>
     <div class="container mt-3">
-      <div class="row row-cols-md-2 mx-auto pt-xl-5">
-        <div class="col-lg-4 col-xl-4 offset-lg-2 offset-xl-2 mb-5 mt-3 mt-md-0">
-          <div class="text-center"><img class="float-start" id="numbers" src="assets/img/numbers/2.png">
-            <div class="card bg-light shadow border rounded"><img class="card-img-top w-100 d-block" id="strands"
-                src="assets/img/strands/HUMSS.jpg">
+      <div class="row row-cols-md-3 mx-auto pt-xl-5">
+        <div class="col-lg-4 col-xl-4 mb-5">
+          <div class="text-center">
+            <img class="float-start" id="numbers" src="assets/img/numbers/1.png">
+            <div class="card bg-light shadow border rounded">
+              <img class="card-img-top w-100 d-block" id="strands" src="assets/img/strands/STEM.jpg">
               <div class="card-body">
-                <p class="card-text">The HUMSS strand explores society, culture, and human behavior through subjects
-                  like literature, economics, sociology, psychology, and political science.</p>
-                <button class="btn btn-warning btn-sm shadow float-end" type="link" style="font-size:0.75rem;"><a
-                    href="HUMSS.html" style="text-decoration: none; color: black;">
-                    Read more &gt;&gt;
-                  </a>
-
+                <p class="card-text">STEM strand: Focuses on science, technology, engineering, and math for future
+                  careers or higher education in these fields.</p>
+                  <button class="btn btn-warning btn-sm shadow float-end" type="button" onclick="showStrand('STEM')" style="font-size: 0.75rem;">
+                    Read more >>
+                </button>
+                
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-xl-4 mb-3 mt-3 mt-md-0">
-          <div class="text-center"><img class="float-start" id="numbers" src="assets/img/numbers/3.png">
-            <div class="card bg-light shadow border rounded"><img class=" card-img-top w-100 d-block" id="strands"
-                src="assets/img/strands/ABM.jpg" width="385" height="385">
+  
+        <div class="col-lg-4 col-xl-4 mb-5">
+          <div class="text-center">
+            <img class="float-start" id="numbers" src="assets/img/numbers/2.png">
+            <div class="card bg-light shadow border rounded">
+              <img class="card-img-top w-100 d-block" id="strands" src="assets/img/strands/HUMSS.jpg">
               <div class="card-body">
-                <p class="card-text">The ABM strand provides an understanding of accounting, finance, marketing, and
-                  entrepreneurial
-                  skills crucial for future careers in commerce, finance, and entrepreneurship.</p>
-                <button class="btn btn-warning btn-sm shadow float-end" type="link" style="font-size:0.75rem;"><a
-                    href="ABM.html" style="text-decoration: none; color: black;">
-                    Read more &gt;&gt;
-                  </a>
-                </button>
+                <p class="card-text">The HUMSS strand explores society, culture, and human behavior through subjects like literature, economics, sociology, psychology, and political science.</p>
+                <button class="btn btn-warning btn-sm shadow float-end" type="button" onclick="showStrand('HUMSS')" style="font-size: 0.75rem;">
+                  Read more >>
+              </button>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-4 col-xl-4 mb-5">
+          <div class="text-center">
+            <img class="float-start" id="numbers" src="assets/img/numbers/3.png">
+            <div class="card bg-light shadow border rounded">
+              <img class="card-img-top w-100 d-block" id="strands" src="assets/img/strands/ABM.jpg" width="385" height="385">
+              <div class="card-body">
+                <p class="card-text">The ABM strand provides an understanding of accounting, finance, marketing, and entrepreneurial skills crucial for future careers in commerce, finance, and entrepreneurship.</p>
+                <button class="btn btn-warning btn-sm shadow float-end" type="button" onclick="showStrand('ABM')" style="font-size: 0.75rem;">
+                  Read more >>
+              </button>
               </div>
             </div>
           </div>
@@ -197,6 +242,7 @@
       </div>
     </div>
   </section>
+  
 
   <!--
     <section class="py-4 py-xl-5 persona-section">
@@ -242,6 +288,26 @@
       </div>
     </div>
   </section>
+
+  <div class="modal fade" id="strandModal" tabindex="-1" role="dialog" aria-labelledby="strandModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl"> <!-- Adjust modal size here -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="strandModalLabel">Strand Details</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="strandContent">
+                <!-- Content for different strands will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
   <script src="assets/js/javascript.js"></script>
 </body>

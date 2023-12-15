@@ -1,34 +1,14 @@
-<!--<!DOCTYPE html>
-<html data-bs-theme="light" lang="en">
+// Function to display content based on the selected strand
+function showStrand(strand) {
+    const strandContentDiv = $('#strandContent');
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>resultdraft</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Actor">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand&amp;display=swap">
-    <link rel="stylesheet" href="assets/css/bg-animate.compiled.css">
-    <link rel="stylesheet" href="assets/css/bg-result.css">
-    <link rel="stylesheet" href="assets/css/button.css">
-    <link rel="stylesheet" href="assets/css/resultpage.css">
-    <link rel="stylesheet" href="assets/css/stem.css">
-</head>
+    // Clear any previous content in the container
+    strandContentDiv.empty();
 
-<body>
-    <nav class="navbar navbar-expand-md sticky-top bg-body py-2 navbar-light"
-        style="box-shadow: 0px 1px 12px rgb(108,108,108);border-bottom-color: rgb(98,98,98);">
-        <div class="container"><img src="assets/img/random/logo.png" width="240" height="83"><button
-                data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span
-                    class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-2" style="margin-left: 550px;">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#">Login&nbsp;</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="container">
+    // Generate content based on the selected strand
+    if (strand === 'STEM') {
+        strandContentDiv.innerHTML = `
+        <div class="container">
         <div class="bg"></div>
         <div class="bg bg2"></div>
         <div class="bg bg3"></div>
@@ -158,8 +138,26 @@
         </div>
     </div>
     </div>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/chart-config.js"></script>
-</body>
+        `;
+    } else if (strand === 'HUMSS') {
+        strandContentDiv.innerHTML = `
+            <!-- Content for HUMSS strand -->
+            <!-- Replace with your desired content -->
+            <h2>HUMSS Strand</h2>
+            <p>This is the content for the HUMSS strand...</p>
+        `;
+    } else if (strand === 'ABM') {
+        strandContentDiv.innerHTML = `
+            <!-- Content for ABM strand -->
+            <!-- Replace with your desired content -->
+            <h2>ABM Strand</h2>
+            <p>This is the content for the ABM strand...</p>
+        `;
+    }
 
-</html>-->
+    // Show the generated content in a popup or modal
+    // You can use your preferred method to display this content as a popup/modal
+    // For instance, you can use a Bootstrap modal or a custom popup implementation
+    // Example using Bootstrap modal:
+    $('#strandModal').modal('show'); // Show Bootstrap modal
+}

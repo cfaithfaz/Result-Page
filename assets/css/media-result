@@ -17,4 +17,25 @@
       height: 75%;
     }
   }
+
+
+  @media (max-width: 576px) {
+    .custom-img-size {
+      width: 5%;
+    }
+  }
+  
+  @media screen and (min-width: 577px) and (max-width: 991px) {
+   .custom-img-size {
+      width: 70%;
+      height: 55%;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    .custom-img-size {
+      width: 100%;
+      height: 100%;
+    }
+  }
   

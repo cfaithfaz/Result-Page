@@ -67,6 +67,8 @@ const labels = [
       type: 'radar',
       data: data,
       options: {
+        maintainAspectRatio: false, 
+        responsive: true,
         elements: {
           line: {
             borderWidth: 3
