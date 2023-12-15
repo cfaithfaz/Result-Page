@@ -141,40 +141,222 @@ function showStrand(strand) {
         `);
     } else if (strand === 'HUMSS') {
         strandContentDiv.html(`
-            <!-- Content for HUMSS strand -->
-            <!-- Replace with your desired content -->
-            <h2>HUMSS Strand</h2>
-            <p>This is the content for the HUMSS strand...</p>
+        <div class="container">
+        <div class="bg"></div>
+        <div class="bg bg2"></div>
+        <div class="bg bg3"></div>
+    </div>
+    <div class="content hide-scrollbar">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 col-lg-6"><img id="strand" src="assets/img/strands/HUMSS.jpg"></div>
+                <div class="col-md-12 col-lg-6">
+                    <h2 class="text-dark" style="padding-top:20px;padding-left:15px;padding-right:15px;"><br><span
+                            style="color:rgba(0, 0, 0, 0.5);">
+                            The Humanities and Social Sciences (HUMSS) strand</span><br><br></h2>
+                    <hr>
+                    <p class="text-black-50" style="padding-left:15px;padding-right:15px;"><br>&nbsp;Designed to help
+                        students interested in pursuing a career in social sciences, humanities, and other
+                        related fields. The strand also explores law, teaching, psychology, and sociology.
+                        The HUMSS offers Philippine Politics and Governance, creative writing, world
+                        religions and belief systems, and an introduction to world history. The HUMSS
+                        strand also encourages extracurricular activities such as debate, writing, and
+                        public speaking to improve critical thinking and communication skills.
+                        <br><br>
+                    </p>
+                   
+                </div>
+            </div>
+            <div class="container">
+                <div class="row mt-5">
+                    <div class="col-md-6" style="list-style-position:inside; text-align: left;">
+                        <h2 style="font-weight: bold;">HUMSS CAREER</h2>
+                        <h6>Bachelor of Art</h6>
+                        <ul>
+                            <li>Philosophy (AB Philosophy)</li>
+                            <li>English (AB English)</li>
+                            <li>Linguistics (AB Linguistics)</li>
+                            <li>Literature (AB Literature)</li>
+                            <li>Filipino (AB Filipino)</li>
+                            <li>Islamic Studies (AB Islamic Studies)</li>
+                            <li>Multimedia Arts (AB Multimedia Arts)</li>
+                        </ul>
+                        <br>
+
+                    </div>
+
+                    <hr class="mt-4 mb-4">
+                    <div class="row mt-4">
+                        <div class="col-md-6" style="list-style-position:inside; text-align: left;">
+
+                            <h2 style="font-weight: bold;">Job Opportunities</h2>
+                            <br>
+                            <ul>
+                                <li>Teacher</li>
+                                <li>Lawyer</li>
+                                <li>Psychologist</li>
+                                <li>Author / Editor</li>
+                                <li>Politician</li>
+                                <li>Criminologist</li>
+                                <li>Journalist</li>
+                                <li>Police</li>
+                                <li>News Anchor</li>
+                                <li>Archaeologist</li>
+                                <li>College Professor</li>
+                                <li>Consultant</li>
+                                <li>Cultural Anthropologist</li>
+                            </ul>
+
+                        </div>
+                        <div class="col-md-6" style="list-style-position:inside; text-align: left;">
+                            <br><br><br>
+                            <ul>
+
+                                <li>Editor/Writer</li>
+                                <li>Geologist</li>
+                                <li>Historian</li>
+                                <li>Linguistic Anthropologist</li>
+                                <li>Museum Curator</li>
+                                <li>Park Interpreter</li>
+                                <li>Physical Anthropologist</li>
+                                <li>Oceanographer</li>
+                                <li>Statistician</li>
+                                <li>Travel agent/guide</li>
+                                <li>Weather Forecaster</li>
+                                <li>Economist</li>
+                                <li>Political Scientist</li>
+                                <li>Sociologist</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
         `);
     } else if (strand === 'ABM') {
         strandContentDiv.html(`
-            <!-- Content for ABM strand -->
-            <!-- Replace with your desired content -->
-            <h2>ABM Strand</h2>
-            <p>This is the content for the ABM strand...</p>
+        <div class="container">
+        <div class="bg"></div>
+        <div class="bg bg2"></div>
+        <div class="bg bg3"></div>
+    </div>
+    <div class="content hide-scrollbar">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 col-lg-6"><img id="strand" src="assets/img/strands/ABM.jpg"></div>
+                <div class="col-md-12 col-lg-6">
+                    <h2 class="text-dark" style="padding-top:20px;padding-left:15px;padding-right:15px;"><br><span
+                            style="color:rgba(0, 0, 0, 0.5);">
+                            The Accountacy, Business and Management (ABM) strand</span><br><br></h2>
+                    <hr>
+                    <p class="text-black-50" style="padding-left:15px;padding-right:15px;"><br>&nbsp;Focuses on teaching
+                        business management concepts such as accounting, finance, operations,
+                        entrepreneurship, business mathematics, and marketing. The strand teaches
+                        subjects such as applied economics, fundamentals of ABM, business math and
+                        finance, organization and management, principles of marketing, and marketing
+                        simulation. ABM strand equips the students with the skills and knowledge to be
+                        business professionals in a highly competitive industry.<br><br></p>
+
+                </div>
+            </div>
+            <div class="container">
+                <div class="row mt-5">
+                    <div class="col-md-6" style="list-style-position:inside; text-align: left;">
+                        <h2 style="font-weight: bold;">Accountacy</h2>
+                        <h6>Bachelor of Science</h6>
+                        <ul>
+                            <li>Accountancy (BSA)</li>
+                            <li>Accounting Technology (BSAcT)</li>
+                            <li>Accounting Information Systems (BSAIS)</li>
+                        </ul>
+                        <br>
+
+                        <h2 style="font-weight: bold;">Business</h2>
+                        <h6>Bachelor of Science Business Administration Majors</h6>
+                        <ul>
+                            <li>Business Economics (BSBA)</li>
+                            <li>Financial Management (BSBA major in FM)</li>
+                            <li>Human Resource Development (BSBA major in HRDM)</li>
+                            <li>Marketing Management (eBSBA major in MM)</li>
+                            <li>Operations Management (BSBA major in OM)</li>
+                            <li>Entrepreneurship (BS Entrep)</li>
+                            <li>Agribusiness (BS Agribusiness)</li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-6" style="list-style-position:inside; text-align: left;">
+
+
+                        <h2 style="font-weight: bold;">Management</h2>
+                        <h6>Bachelor of Science</h6>
+                        <ul>
+                            <li>Hotel and Restaurant Management (BS HRM)</li>
+                            <li>Office Administration (BSOA)</li>
+                            <li>Real Estate Management (BS REM)</li>
+                            <li>Tourism Management (BSTM)</li>
+                            <li>Community Development (BS Community Development)</li>
+                            <li>Foreign Service (BS Foreign Service)</li>
+                            <li>International Studies (BSIS)</li>
+                            <li>Public Safety (BSPS)</li>
+                            <li>Social Work (BS Social Work)</li>
+                        </ul>
+        
+                    </div>
+
+                </div>
+                <hr class="mt-4 mb-4">
+                <div class="row mt-4">
+                    <div class="col-md-6" style="list-style-position:inside; text-align: left;">
+
+                        <h2 style="font-weight: bold;">Job Opportunities</h2>
+                        <br>
+                        <ul>
+                            <li>Hotel and Restaurant Management (BS HRM)</li>
+                            <li>Office Administration (BSOA)</li>
+                            <li>Real Estate Management (BS REM)</li>
+                            <li>Tourism Management (BSTM)</li>
+                        </ul>
+
+                    </div>
+                    <div class="col-md-6" style="list-style-position:inside; text-align: left;">
+                        <br><br><br>
+                        <ul>
+
+                            <li>Community Development (BS Community Development)</li>
+                            <li>Foreign Service (BS Foreign Service)</li>
+                            <li>International Studies (BSIS)</li>
+                            <li>Public Safety (BSPS)</li>
+                            <li>Social Work (BS Social Work)</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
         `);
     }
 
-    // Show the generated content in a popup or modal
-    // You can use your preferred method to display this content as a popup/modal
-    // For instance, you can use a Bootstrap modal or a custom popup implementation
-    // Example using Bootstrap modal:
-    $('#strandModal').modal('show'); // Show Bootstrap modal
+
+    $('#strandModal').modal('show'); 
 }
 $('.btn-open-modal').on('click', function () {
-    var strand = $(this).data('strand'); // Get the strand from the clicked button
+    var strand = $(this).data('strand');
 
-    // Set the modal title based on the strand
+   
     var title = getStrandTitle(strand);
     $('#strandModalLabel').text(title);
 
-    // Show the modal
+    
     $('#strandModal').modal('show');
 });
 
-// Function to get the title based on the selected strand (you can modify this function based on your requirement)
 function getStrandTitle(strand) {
-    // Example titles based on different strands
     if (strand === 'STEM') {
         return 'Science, Technology, Engineering, and Mathematics (STEM) Strand';
     } else if (strand === 'HUMSS') {
@@ -186,12 +368,9 @@ function getStrandTitle(strand) {
     }
 }
 $(document).on('click', '[data-dismiss="modal"]', function () {
-    // Close the modal
     $('#strandModal').modal('hide');
 
-    // Delay the back navigation to ensure the modal is fully closed
     setTimeout(function() {
-        // Navigate back to the result page
         window.history.back();
-    }, 500); // Adjust the delay timing if needed
+    }, 500); 
 });
