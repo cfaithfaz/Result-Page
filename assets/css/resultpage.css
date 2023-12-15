@@ -126,6 +126,8 @@
 
 #strands {
   height: 105%;
+  font-family:'Titan One',sans-serif;
+  font-weight: bold;
 }
 
 #speakers {
@@ -150,16 +152,10 @@
   height: 100%;
 }
 
-#strands{
-  font-family:'Titan One',sans-serif;
-  font-weight: bold;
-}
-
 #myChart {
   width: 500px; 
   height: 500px;
 }
-
 
 .circle-behind {
   position: absolute;
@@ -197,10 +193,10 @@
   text-align: center;
 }
 
-#riasec-result{
+#result-layer{
 
   font-size: medium;
-  font-weight: 500; 
+  font-weight: bold; 
 }
 
 .custom-img-size {
@@ -249,4 +245,7 @@ height: 260px;
 .modal-content {
   width: 100% !important;
   margin: auto !important;
+}
+.curved-div.upper {
+  pointer-events: none; 
 }

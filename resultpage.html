@@ -56,14 +56,14 @@
                 It makes you prefer solitary activities,
                 scientific research,and intellectual pursuits.</p>
             </div>
-            <div class="head mt-5">
-              <a href="#riasec-result" class="custom-btn btn btn-outline-primary btn-sm btn-block" style="position: relative; text-decoration: none; color: black; display: inline-block;">
+            <div class=" mt-5">
+              <a href="#result-layer" class="custom-btn btn btn-outline-primary btn-sm btn-block" style="position: relative; text-decoration: none; color: black; display: inline-block;">
                   See the Result
                   <i class="far fa-arrow-alt-circle-right" style="font-size: 15px; vertical-align: middle; margin-left: 5px;"></i>
               </a>
           </div>
           
-          </div>
+          </div> 
         </div>
         <div class="col-md-6">
           <div class="position-relative"
@@ -88,7 +88,7 @@
     </svg>
   </div>
   
-  <section id="riasec-result" class="mt-0" style="background-color:#FFB000">
+  <section id="result-layer" class="mt-0" style="background-color:#FFB000">
 
     <div class="container py-1">
       <header>
@@ -155,9 +155,9 @@
       <div class="row align-items-center pt-5">
         <div class="col-md-8 text-center text-md-start mx-auto">
           <div class="text-center">
-            <h1 class=" display-4 mb-5"><span class="top-three underline-thick">TOP THREE</span><span
-                class="strand-reco">&nbsp;<br/>STRAND
-                RECOMMENDATION OF THE SYSTEM</span></h1>
+            <h1 class=" display-4 mb-5"><span class="top-three underline-thick">TOP THREE STRAND</span><span
+                class="strand-reco">&nbsp;<br/>
+                SYSTEM RECOMMENDATION </span></h1>
             <p class="fs-5 text-muted mb-5">It indicates here the selection of three suggestions based on specific
               criteria or results.These recommendations are derived from a particular evaluation process, highlighting
               the best choices
@@ -182,8 +182,23 @@
       </div>-->
     </div>
   </section>
-  
 
+  <div class="modal fade" id="strandModal" tabindex="-1" role="dialog" aria-labelledby="strandModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-fullscreen"> <!-- Adjust modal size here -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="strandModalLabel">Strand Details</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="strandContent">
+                <!-- Content for different strands will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+</div>
+<!--SYSTEM RECOMMENDATION-->
   <section>
     <div class="container mt-3">
       <div class="row row-cols-md-3 mx-auto pt-xl-5">
@@ -237,7 +252,66 @@
     </div>
   </section>
   
+  <!--PERSONAL PREFERENCES-->
+  <section>
+    <div class="container pt-0 pt-xl-5 ">
+      <div class="row align-items-center pt-5">
+        <div class="col-md-8 text-center text-md-start mx-auto">
+          <div class="text-center">
+            <h1 class=" display-4 mb-5">
+               PERSONAL PREFERENCE</h1>
+            <p class="fs-5 text-muted mb-5">It indicates here the selection of three suggestions based on specific
+              criteria or results.These recommendations are derived from a particular evaluation process, highlighting
+              the best choices
+              according to set standards or analysis.</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div class="container mt-3">
+      <div class="row row-cols-md-3 mx-auto pt-xl-5">
+        <div class="col-lg-4 col-xl-4 mb-5">
+          <div class="text-center">
+            <img class="float-start" id="numbers" src="assets/img/numbers/1.png">
+            <div class="card bg-light shadow border rounded">
+              <img class="card-img-top w-100 d-block" id="strands" src="assets/img/strands/STEM.jpg">
+              <div class="card-body">
+                <p class="card-text">STEM strand: Focuses on science, technology, engineering, and math for future
+                  careers or higher education in these fields.</p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-4 col-xl-4 mb-5">
+          <div class="text-center">
+            <img class="float-start" id="numbers" src="assets/img/numbers/2.png">
+            <div class="card bg-light shadow border rounded">
+              <img class="card-img-top w-100 d-block" id="strands" src="assets/img/strands/HUMSS.jpg">
+              <div class="card-body">
+                <p class="card-text">The HUMSS strand explores society, culture, and human behavior through subjects like literature, economics, sociology, psychology, and political science.</p>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-4 col-xl-4 mb-5">
+          <div class="text-center">
+            <img class="float-start" id="numbers" src="assets/img/numbers/3.png">
+            <div class="card bg-light shadow border rounded">
+              <img class="card-img-top w-100 d-block" id="strands" src="assets/img/strands/ABM.jpg" width="385" height="385">
+              <div class="card-body">
+                <p class="card-text">The ABM strand provides an understanding of accounting, finance, marketing, and entrepreneurial skills crucial for future careers in commerce, finance, and entrepreneurship.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <!--
     <section class="py-4 py-xl-5 persona-section">
         <div class="container">
@@ -283,21 +357,7 @@
     </div>
   </section>
 
-  <div class="modal fade" id="strandModal" tabindex="-1" role="dialog" aria-labelledby="strandModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-fullscreen"> <!-- Adjust modal size here -->
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="strandModalLabel">Strand Details</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body" id="strandContent">
-                <!-- Content for different strands will be dynamically inserted here -->
-            </div>
-        </div>
-    </div>
-</div>
+
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

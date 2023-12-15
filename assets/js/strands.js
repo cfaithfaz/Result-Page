@@ -367,10 +367,14 @@ function getStrandTitle(strand) {
         return 'Strand Details';
     }
 }
-$(document).on('click', '[data-dismiss="modal"]', function () {
-    $('#strandModal').modal('hide');
 
-    setTimeout(function() {
-        window.history.back();
-    }, 500); 
+document.addEventListener('click', function (event) {
+    if (event.target.matches('[data-dismiss="modal"]')) {
+        var modal = document.getElementById('strandModal');
+        $(modal).modal('hide');
+
+        setTimeout(function() {
+            history.back();
+        }, 100);
+    }
 });
