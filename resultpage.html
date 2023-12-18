@@ -29,6 +29,7 @@
     src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/1.2.2/chartjs-plugin-annotation.js"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
+  
 </head>
 
 <body>
@@ -183,21 +184,32 @@
     </div>
   </section>
 
+ <!--MODAL-->
   <div class="modal fade" id="strandModal" tabindex="-1" role="dialog" aria-labelledby="strandModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-fullscreen"> <!-- Adjust modal size here -->
         <div class="modal-content">
+          <div class="container"> 
+            <div class="background-elements">
+              <div class="bg"></div>
+              <div class="bg bg2"></div>
+              <div class="bg bg3"></div>
+            </div>
+        </div>
             <div class="modal-header">
-                <h5 class="modal-title" id="strandModalLabel">Strand Details</h5>
+                <h5 class="modal-title" id="strandModalLabel"> Details</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
+                
             </div>
-            <div class="modal-body" id="strandContent">
-                <!-- Content for different strands will be dynamically inserted here -->
+            <!--<div class="modal-body" id="strandContent">
+                 Content for different strands will be dynamically inserted here -->
+            <div class="modal-body" id="strandContent"></div>
             </div>
         </div>
     </div>
 </div>
+
 <!--SYSTEM RECOMMENDATION-->
   <section>
     <div class="container mt-3">
@@ -258,6 +270,7 @@
       <div class="row align-items-center pt-5">
         <div class="col-md-8 text-center text-md-start mx-auto">
           <div class="text-center">
+             
             <h1 class=" display-4 mb-5">
                PERSONAL PREFERENCE</h1>
             <p class="fs-5 text-muted mb-5">It indicates here the selection of three suggestions based on specific

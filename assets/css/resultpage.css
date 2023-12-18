@@ -249,3 +249,16 @@ height: 260px;
 .curved-div.upper {
   pointer-events: none; 
 }
+
+#strand {
+  height: 100%;
+  width: 100%;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  overflow-y: scroll;
+}

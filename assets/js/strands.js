@@ -1,18 +1,13 @@
-// Function to display content based on the selected strand
+
 function showStrand(strand) {
     const strandContentDiv = $('#strandContent');
 
     // Clear any previous content in the container
     strandContentDiv.empty();
-
     // Generate content based on the selected strand
     if (strand === 'STEM') {
         strandContentDiv.html(`
-        <div class="container">
-        <div class="bg"></div>
-        <div class="bg bg2"></div>
-        <div class="bg bg3"></div>
-    </div>
+     
     <div class="content hide-scrollbar">
         <div class="container-fluid">
             <div class="row">
@@ -342,39 +337,6 @@ function showStrand(strand) {
         `);
     }
 
-
     $('#strandModal').modal('show'); 
-}
-$('.btn-open-modal').on('click', function () {
-    var strand = $(this).data('strand');
-
-   
-    var title = getStrandTitle(strand);
-    $('#strandModalLabel').text(title);
-
-    
-    $('#strandModal').modal('show');
-});
-
-function getStrandTitle(strand) {
-    if (strand === 'STEM') {
-        return 'Science, Technology, Engineering, and Mathematics (STEM) Strand';
-    } else if (strand === 'HUMSS') {
-        return 'Humanities and Social Sciences (HUMSS) Strand';
-    } else if (strand === 'ABM') {
-        return 'Accountancy, Business, and Management (ABM) Strand';
-    } else {
-        return 'Strand Details';
+    // $('#strandModal .content').addClass('gradient-animator'); // Apply animation class to the container 
     }
-}
-
-document.addEventListener('click', function (event) {
-    if (event.target.matches('[data-dismiss="modal"]')) {
-        var modal = document.getElementById('strandModal');
-        $(modal).modal('hide');
-
-        setTimeout(function() {
-            history.back();
-        }, 100);
-    }
-});
