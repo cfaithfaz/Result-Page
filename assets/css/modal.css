@@ -57,3 +57,22 @@ h1 {
   position: relative;
   z-index: 1;
 }
+
+.modal-backdrop {
+  display: none !important;
+}
+
+.modal-body {
+  overflow-y: auto;
+}
+
+/* Ensure the modal content is scrollable */
+.modal-body {
+  overflow-y: auto;
+}
+
+/* Set a higher z-index for the modal to ensure it appears above other elements */
+.modal {
+  z-index: 1050; /* Or a value higher than the elements it overlaps */
+}
+

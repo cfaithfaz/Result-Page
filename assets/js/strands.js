@@ -338,5 +338,25 @@ function showStrand(strand) {
     }
 
     $('#strandModal').modal('show'); 
-    // $('#strandModal .content').addClass('gradient-animator'); // Apply animation class to the container 
     }
+
+// JavaScript function to close the modal and enable scrolling
+function hideModalAndEnableScroll() {
+    $('#strandModal').modal('hide');
+    $('body').css('overflow', 'auto'); // Re-enable scrolling on the body
+    // Additional logic if needed
+}
+
+
+function getStrandTitle(strand) {
+    if (strand === 'STEM') {
+        return 'Science, Technology, Engineering, and Mathematics (STEM) Strand';
+    } else if (strand === 'HUMSS') {
+        return 'Humanities and Social Sciences (HUMSS) Strand';
+    } else if (strand === 'ABM') {
+        return 'Accountancy, Business, and Management (ABM) Strand';
+    } else {
+        return 'Strand Details';
+    }
+    }
+    

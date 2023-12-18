@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="assets/css/bg-result.css">
   <link rel="stylesheet" href="assets/css/button.css">
   <link rel="stylesheet" href="assets/css/resultpage.css">
-  <link rel="stylesheet" href="assets/css/stem.css">
+  <link rel="stylesheet" href="assets/css/modal.css">
   <link rel="stylesheet" href="assets/css/bg-animate.css">
   <link rel="stylesheet" href="assets/css/btn-animate.css">
 
@@ -151,7 +151,7 @@
 
   <!--TOP THREE STRANDS -->
 
-  <section>
+  <section id="topThree">
     <div class="container pt-0 pt-xl-5 ">
       <div class="row align-items-center pt-5">
         <div class="col-md-8 text-center text-md-start mx-auto">
@@ -192,12 +192,14 @@
             <div class="background-elements">
               <div class="bg"></div>
               <div class="bg bg2"></div>
+
+
               <div class="bg bg3"></div>
             </div>
         </div>
             <div class="modal-header">
                 <h5 class="modal-title" id="strandModalLabel"> Details</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="hideModalAndEnableScroll()">
                     <span aria-hidden="true">&times;</span>
                 </button>
                 
@@ -222,7 +224,7 @@
               <div class="card-body">
                 <p class="card-text">STEM strand: Focuses on science, technology, engineering, and math for future
                   careers or higher education in these fields.</p>
-                  <button class="btn btn-warning btn-sm shadow float-end" type="button" onclick="showStrand('STEM')" style="font-size: 0.75rem;">
+                  <button class="btn btn-warning btn-sm shadow float-end" type="button" data-toggle="modal" data-target="#strandModal" onclick="showStrand('STEM')" style="font-size: 0.75rem;">
                     Read more >>
                 </button>
                 
@@ -238,7 +240,7 @@
               <img class="card-img-top w-100 d-block" id="strands" src="assets/img/strands/HUMSS.jpg">
               <div class="card-body">
                 <p class="card-text">The HUMSS strand explores society, culture, and human behavior through subjects like literature, economics, sociology, psychology, and political science.</p>
-                <button class="btn btn-warning btn-sm shadow float-end" type="button" onclick="showStrand('HUMSS')" style="font-size: 0.75rem;">
+                <button class="btn btn-warning btn-sm shadow float-end" type="button"  data-toggle="modal" data-target="#strandModal" onclick="showStrand('HUMSS')" style="font-size: 0.75rem;">
                   Read more >>
               </button>
               </div>
@@ -253,7 +255,7 @@
               <img class="card-img-top w-100 d-block" id="strands" src="assets/img/strands/ABM.jpg" width="385" height="385">
               <div class="card-body">
                 <p class="card-text">The ABM strand provides an understanding of accounting, finance, marketing, and entrepreneurial skills crucial for future careers in commerce, finance, and entrepreneurship.</p>
-                <button class="btn btn-warning btn-sm shadow float-end" type="button" onclick="showStrand('ABM')" style="font-size: 0.75rem;">
+                <button class="btn btn-warning btn-sm shadow float-end" type="button" data-toggle="modal" data-target="#strandModal" onclick="showStrand('ABM')" style="font-size: 0.75rem;">
                   Read more >>
               </button>
               </div>
@@ -264,6 +266,7 @@
     </div>
   </section>
   
+
   <!--PERSONAL PREFERENCES-->
   <section>
     <div class="container pt-0 pt-xl-5 ">
@@ -346,27 +349,8 @@
   <section class="bg-light" id="team">
     <div class="container">
       <h2 class="mb-5" style="text-align: center;">Testimonials: What People Are Saying...</h2>
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="text-center"><img class="rounded-circle" id="small-image" src="assets/img/speakers/jack%20ma.jpg">
-            <h4>Jack Ma</h4>
-            <p class="text-muted">If you're never tried, how will you ever know if there's any chance?&nbsp;&nbsp;</p>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="text-center"><img class="rounded-circle" id="small-image"
-              src="assets/img/speakers/shiv%20khera.png">
-            <h4>Shiv Kera</h4>
-            <p class="text-muted">Your positive action combined with positive thinking results in success.&nbsp;</p>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="text-center"><img class="rounded-circle" id="small-image" src="assets/img/team/2.jpg">
-            <h4>Diana Pertersen</h4>
-            <p class="text-muted">Lead Developer</p>
-          </div>
-        </div>
-      </div>
+      <div class="row" id="testimonialsRow">
+       <!--will be added here the testimonials by shuffled-->
     </div>
   </section>
 
