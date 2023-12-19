@@ -20,6 +20,8 @@
   <link rel="stylesheet" href="assets/css/modal.css">
   <link rel="stylesheet" href="assets/css/bg-animate.css">
   <link rel="stylesheet" href="assets/css/btn-animate.css">
+  <link rel="stylesheet" href="assets/css/perStrand.css">
+
 
   <link rel="stylesheet" href="assets/Sass/btnSee.css">
   <script src="assets/js/chart-config.js"></script>
@@ -91,23 +93,20 @@
   </div>
   
   <section id="result-layer" class="mt-0" style="background-color:#FFB000">
-
     <div class="container py-1">
       <header>
-        <h1>
-
-        </h1>
+        <h1></h1>
       </header>
       <div class="row justify-content-center mt-5">
-        <div class="col-md-6 mb-5">
+        <div class="col-md-8 mb-5">
           <div class="riasec-card card h-100">
             <div class="row g-0">
               <div class="col-md-6">
-                <img class="card-img-top rounded img-fluid shadow" src="assets/img/riasec/2.png" alt="Realistic">
+                <img class="card-img-top rounded img-fluid shadow" src="assets/img/riasec/realistic.png" alt="Realistic">
               </div>
               <div class="col-md-6">
-                <div class="card-body d-flex flex-column">
-                  <h5 class="card-title fw-bold text-center mt-3">Realistic</h5>
+                <div class="card-body riasec-card-body d-flex flex-column">
+                  <h5 class="card-title custom-title fw-bold text-center mt-3">Realistic</h5>
                   <p class="card-text mt-3 custom-paragraph ">Action-oriented and practical, you're inclined to solve
                     problems through hands-on approaches.
                     You're competitive, enjoy physical activities, and are curious about science and mechanics.</p>
@@ -116,22 +115,21 @@
             </div>
           </div>
         </div>
-
-        <div class="col-md-6 mb-5">
+  
+        <div class="col-md-8 mb-5">
           <div class="riasec-card card h-100">
             <div class="row g-0">
               <div class="col-md-6">
-                <img class="card-img-top rounded img-fluid shadow" src="assets/img/riasec/3.png" alt="Conventional">
+                <img class="card-img-top rounded img-fluid shadow" src="assets/img/riasec/conventional.png" alt="Conventional">
               </div>
               <div class="col-md-6">
-                <div class="card-body d-flex flex-column">
-                  <h5 class="card-title fw-bold text-center mt-3">Conventional</h5>
+                <div class="card-body riasec-card-body d-flex flex-column">
+                  <h5 class="card-title  custom-title fw-bold text-center mt-3">Conventional</h5>
                   <p class="card-text mt-3 custom-paragraph">
                     You are a person who likes rules and regulations and insists on self-control.
                     You like structure and order to prevent unpredictable environments.<br>
                     You place importance on reputation, power, or status.
                   </p>
-
                 </div>
               </div>
             </div>
@@ -139,8 +137,11 @@
         </div>
       </div>
     </div>
-
   </section>
+  
+  
+  
+  
   <div id="waves" style="position: relative;height: 110px;">
 
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1390 200"  style="filter: drop-shadow(0px 4px 4px rgba(114, 112, 112, 0.2));">
@@ -158,9 +159,9 @@
         <div class="col-md-8 text-center text-md-start mx-auto">
           <div class="text-center">
             <h1 class=" display-4 mb-5 mt-5"><span class="top-three underline-thick">TOP THREE STRAND</span><span
-                class="strand-reco">&nbsp;<br/>
+              id="head-text" class="strand-reco">&nbsp;<br/>
                 SYSTEM RECOMMENDATION </span></h1>
-            <p class="fs-5 text-muted mb-5">It indicates here the selection of three suggestions based on specific
+            <p id="intro-text" class="text-muted mb-5">It indicates here the selection of three suggestions based on specific
               criteria or results.These recommendations are derived from a particular evaluation process, highlighting
               the best choices
               according to set standards or analysis.</p>
@@ -216,15 +217,15 @@
 <!--SYSTEM RECOMMENDATION-->
   <section>
     <div class="container mt-3">
-      <div class="row row-cols-md-3 mx-auto pt-xl-5"  id="card-row">
+      <div class="row row-cols-md-3 mx-auto pt-xl-5 py-3"  id="card-row">
         <div class="col-lg-4 col-xl-4 mb-5">
           <div class="text-center">
             <img class="float-start" id="numbers" src="assets/img/numbers/1.png">
             <div class="card bg-light shadow border rounded">
               <img class="card-img-top w-100 d-block" id="strands" src="assets/img/strands/STEM.jpg">
               <div class="card-body">
-                <p id="txtStrands" class="card-text">STEM strand: Focuses on science, technology, engineering, and math for future
-                  careers or higher education in these fields.</p>
+                <p id="txtStrands" class="card-text">STEM strand focuses on science, technology, engineering, and math. 
+                  Preparing students for careers in fields like engineering, computer science and healthcare</p>
                   <button class="btn btn-warning btn-sm shadow float-end" type="button" data-toggle="modal" data-target="#strandModal" onclick="showStrand('STEM')" style="font-size: 0.75rem;">
                     Read more >>
                 </button>
@@ -253,7 +254,7 @@
           <div class="text-center">
             <img class="float-start" id="numbers" src="assets/img/numbers/3.png">
             <div class="card bg-light shadow border rounded">
-              <img class="card-img-top w-100 d-block" id="strands" src="assets/img/strands/ABM.jpg" width="385" height="385">
+              <img class="card-img-top w-100 d-block" id="strands" src="assets/img/strands/ABM.jpg">
               <div class="card-body">
                 <p id="txtStrands" class="card-text">The ABM strand provides an understanding of accounting, finance, marketing, and entrepreneurial skills crucial for future careers in commerce, finance, and entrepreneurship.</p>
                 <button class="btn btn-warning btn-sm shadow float-end" type="button" data-toggle="modal" data-target="#strandModal" onclick="showStrand('ABM')" style="font-size: 0.75rem;">
@@ -275,9 +276,9 @@
         <div class="col-md-8 text-center text-md-start mx-auto">
           <div class="text-center">
              
-            <h1 class=" display-4 mb-5">
+            <h1 id="head-text" class=" display-4 mb-5">
                PERSONAL PREFERENCE</h1>
-            <p class="fs-5 text-muted mb-5">It indicates here the selection of three suggestions based on specific
+            <p id="intro-text"  class="fs-5 text-muted mb-5">It indicates here the selection of three suggestions based on specific
               criteria or results.These recommendations are derived from a particular evaluation process, highlighting
               the best choices
               according to set standards or analysis.</p>
@@ -294,8 +295,8 @@
             <div class="card bg-light shadow border rounded">
               <img class="card-img-top w-100 d-block" id="strands" src="assets/img/strands/STEM.jpg">
               <div class="card-body">
-                <p id="txtStrands" class="strands card-text ">STEM strand: Focuses on science, technology, engineering, and math for future
-                  careers or higher education in these fields.</p>
+                <p id="txtStrands" class="strands card-text ">STEM strand focuses on science, technology, engineering, and math. 
+                  Preparing students for careers in fields like engineering, computer science and healthcare</p>
                 
               </div>
             </div>
@@ -349,7 +350,7 @@
   <section></section>
   <section class="bg-light p-5 mt-4" id="team">
     <div class="container mt-5 py-3">
-      <h2 class="mb-5" style="text-align: center;">Testimonials: What People Are Saying...</h2>
+      <h2 class="mb-5" style="text-align: center; font-size: 40px;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">Testimonials: What People Are Saying...</h2>
       <div class="row" id="testimonialsRow">
        <!--will be added here the testimonials by shuffled-->
     </div>

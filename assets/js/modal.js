@@ -4,26 +4,26 @@ function showStrand(strand) {
 
     // Clear any previous content in the container
     strandContentDiv.empty();
-    // Generate content based on the selected strand
+
+
     if (strand === 'STEM') {
         strandContentDiv.html(`
      
     <div class="content hide-scrollbar">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-12 col-lg-6"><img id="strand" src="assets/img/strands/STEM.jpg"></div>
+                <div class="col-md-12 col-lg-6"><img id="img-strand" src="assets/img/strands/STEM.jpg" class="img-fluid"></div>
                 <div class="col-md-12 col-lg-6">
-                    <h2 class="text-dark" style="padding-top:20px;padding-left:15px;padding-right:15px;"><br><span
+                    <h2 class="text-dark"><br><span
                             style="color:rgba(0, 0, 0, 0.5);">
                             The Science, Technology, Engineering, and Mathematics (STEM) strand</span><br><br></h2>
                     <hr>
-                    <p class="text-black-50" style="padding-left:15px;padding-right:15px;"><br>&nbsp;Is a strand that
-                        aims to equip students
-                        with the necessary skills, knowledge, and<br>experience in science and technology-related
-                        fields.The strand covers a wide<br>range of subjects, including biology, physics, chemistry, computer
-                        science,and<br>mathematics. STEM strand exposes the student to more complex mathematics<br>and science
-                        concepts that aim to create a foundation of knowledge for future<br>college degrees. The strand also includes
-                        hands-on activities,laboratory<br>experiments, and research projects to build up practical experiences<br><br></p>
+                    <p class="text-black-50" <br>&nbsp;Is a strand that
+                        aims to equip students with the necessary skills, knowledge, <br/>and  experience in science and technology-related
+                        fields.The strand covers a wide range of subjects, including biology, physics, chemistry, computer
+                        science,and mathematics. STEM strand exposes the student to more complex mathematics and science
+                        concepts that aim to create a foundation of knowledge for future college degrees. The strand also includes
+                        hands-on activities,laboratory experiments, and research projects to build up practical experiences<br><br></p>
                   
                 </div>
             </div>
@@ -32,7 +32,7 @@ function showStrand(strand) {
                     <div class="col-md-6" style="list-style-position:inside; text-align: left;">
                         <h2 style="font-weight: bold;">Science</h2>
                         <h6>Bachelor of Science</h6>
-                        <ul>
+                        <ul class="list-course">
                             <li>Environmental Science (BSES)</li>
                             <li>Geology (BS Geology)</li>
                             <li>Molecular Biology (BS Molecular Biology)</li>
@@ -54,7 +54,7 @@ function showStrand(strand) {
                         <br>
                         <h2 style="font-weight: bold;">Technology</h2>
                         <h6>Bachelor of Science</h6>
-                        <ul>
+                        <ul class="list-course">
                             <li>Computer Science (BSCS)</li>
                             <li>Information Technology (BSIT)</li>
                             <li>Information System (BSIS)</li>
@@ -65,7 +65,7 @@ function showStrand(strand) {
 
                         <h2 style="font-weight: bold;">Engineering</h2>
                         <h6>Bachelor of Science</h6>
-                        <ul>
+                        <ul class="list-course">
                             <li>Aeronautical Engineering (BS AeroE)</li>
                             <li>Ceramic Engineering (BSCerE)</li>
                             <li>Chemical Engineering (BSChE)</li>
@@ -87,13 +87,12 @@ function showStrand(strand) {
                         </ul>
                         <h2 style="font-weight: bold;">Mathematics</h2>
                         <h6>Bachelor of Science</h6>
-                        <ul>
+                        <ul class="list-course"c>
                             <li>Mathematics (BS Mathematics)</li>
                             <li>Applied Mathematics (BS Applied Mathematics)</li>
                             <li>Statistics(BS Stat)</li>
                         </ul>
                     </div>
-
 
 
                 </div>
@@ -103,7 +102,7 @@ function showStrand(strand) {
 
                         <h2 style="font-weight: bold;">Job Opportunities</h2>
                         <br>
-                        <ul>
+                        <ul class="list-course">
                             <li>Medical doctors</li>
                             <li>Dentists</li>
                             <li>Health Care Professionals</li>
@@ -116,7 +115,7 @@ function showStrand(strand) {
                     </div>
                     <div class="col-md-6" style="list-style-position:inside; text-align: left;">
                         <br><br><br>
-                        <ul>
+                        <ul class="list-course">
 
                             <li>Architects</li>
                             <li>Computer Technician</li>
@@ -136,21 +135,17 @@ function showStrand(strand) {
         `);
     } else if (strand === 'HUMSS') {
         strandContentDiv.html(`
-        <div class="container">
-        <div class="bg"></div>
-        <div class="bg bg2"></div>
-        <div class="bg bg3"></div>
-    </div>
+    
     <div class="content hide-scrollbar">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12 col-lg-6"><img id="strand" src="assets/img/strands/HUMSS.jpg"></div>
                 <div class="col-md-12 col-lg-6">
-                    <h2 class="text-dark" style="padding-top:20px;padding-left:15px;padding-right:15px;"><br><span
+                    <h2 class="text-dark" ><br><span
                             style="color:rgba(0, 0, 0, 0.5);">
                             The Humanities and Social Sciences (HUMSS) strand</span><br><br></h2>
                     <hr>
-                    <p class="text-black-50" style="padding-left:15px;padding-right:15px;"><br>&nbsp;Designed to help
+                    <p class="text-black-50"><br>&nbsp;Designed to help
                         students interested in pursuing a career in social sciences, humanities, and other
                         related fields. The strand also explores law, teaching, psychology, and sociology.
                         The HUMSS offers Philippine Politics and Governance, creative writing, world
@@ -182,7 +177,7 @@ function showStrand(strand) {
 
                     <hr class="mt-4 mb-4">
                     <div class="row mt-4">
-                        <div class="col-md-6" style="list-style-position:inside; text-align: left;">
+                        <div class="col-md-6">
 
                             <h2 style="font-weight: bold;">Job Opportunities</h2>
                             <br>
@@ -203,7 +198,7 @@ function showStrand(strand) {
                             </ul>
 
                         </div>
-                        <div class="col-md-6" style="list-style-position:inside; text-align: left;">
+                        <div class="col-md-6">
                             <br><br><br>
                             <ul>
 

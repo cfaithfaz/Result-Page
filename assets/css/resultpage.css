@@ -38,10 +38,6 @@
   }
 }
 
-.strand {
-  height: 400px;
-}
-
 #img-persona-result {
   width: 350px;
   height: 400px;
@@ -94,10 +90,6 @@
   float: left !important;
 }
 
-#strands {
-  height: 400px;
-  width: 450px;
-}
 
 .underline-thick {
   text-decoration: underline;
@@ -113,17 +105,26 @@
   /* height: 400px; */
 }
 
-.card-body {
+.riasec-card-body {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-line-clamp: 5;
-  max-height: 200px;
+  max-height: 500px;
   font-weight: lighter;
   font-size: 14px;
+  height: 100%;
 }
 
+.riasec-card{
+  max-width: 200%;
+  height: 100%;
+  margin: auto;
+  
+  }
+
+  
 #strands {
   height: 105%;
   font-family:'Titan One',sans-serif;
@@ -143,6 +144,11 @@
   align-items: center;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   border: 5px outset #ff8000;
+}
+
+#strands {
+  height: 400px;
+  width: 450px;
 }
 
 .header-area{
@@ -206,20 +212,15 @@
 }
 
 .custom-paragraph{
-  font-size: 16px;
+  font-size: 20px;
   padding-bottom: 10px; 
   overflow:visible;
   
 }
-.riasec-card{
-max-width: 100%;
-margin: auto;
+.custom-title{
 
-}
-.card-body{
-
-  min-height: 100%;
-  height: auto;
+  font-size: 32px;
+  font-weight: bold;
 }
 
 .top-three{
@@ -250,10 +251,6 @@ height: 260px;
   pointer-events: none; 
 }
 
-#strand {
-  height: 100%;
-  width: 100%;
-}
 
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
@@ -269,19 +266,25 @@ height: 260px;
 font-weight: bold;
 }
 
+#intro-text{
+
+  font-size: 20px;
+}
+
+#head-text{
+
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*
 .card {
-  display: flex;
-  flex-direction: column;
   height: 100%;
 }
 
 .card-body {
-  flex-grow: 1;
-  display: flex;
+  display:flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%; 
-}
-
-
+  height: 100%;
+}*/
 
