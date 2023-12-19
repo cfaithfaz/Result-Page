@@ -262,3 +262,26 @@ height: 260px;
 .hide-scrollbar {
   overflow-y: scroll;
 }
+.quote-text, #txtStrands {
+  font-size: 18px;
+}
+.speaker{
+font-weight: bold;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; 
+}
+
+
+

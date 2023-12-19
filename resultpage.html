@@ -23,7 +23,8 @@
 
   <link rel="stylesheet" href="assets/Sass/btnSee.css">
   <script src="assets/js/chart-config.js"></script>
-  <script src="assets/js/strands.js"></script>
+  <script src="assets/js/modal.js"></script>
+  <script src="assets/js/testimonials.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/1.2.2/chartjs-plugin-annotation.js"></script>
@@ -82,7 +83,7 @@
   </section>
 
   <div class="curved-div upper" style="margin-top: -100px; position: relative;">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 260" style="position: absolute; bottom: 0px; filter: drop-shadow(0px -4px 4px rgba(110, 109, 109, 0.4));">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1410 230" style="position: absolute; bottom: 0px; filter: drop-shadow(0px -4px 4px rgba(110, 109, 109, 0.4));">
       <path fill="#FFB000" fill-opacity="1"
         d="M0,128L48,144C96,160,192,192,288,202.7C384,213,480,203,576,176C672,149,768,107,864,101.3C960,96,1056,128,1152,128C1248,128,1344,96,1392,80L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
       </path>
@@ -140,9 +141,9 @@
     </div>
 
   </section>
-  <div id="waves" style="position: relative;height: 120px;">
+  <div id="waves" style="position: relative;height: 110px;">
 
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"  style="filter: drop-shadow(0px 4px 4px rgba(114, 112, 112, 0.2));">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1390 200"  style="filter: drop-shadow(0px 4px 4px rgba(114, 112, 112, 0.2));">
       <path fill="#FFB000" fill-opacity="1"
         d="M0,160L40,154.7C80,149,160,139,240,117.3C320,96,400,64,480,69.3C560,75,640,117,720,138.7C800,160,880,160,960,144C1040,128,1120,96,1200,85.3C1280,75,1360,85,1400,90.7L1440,96L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z">
       </path>
@@ -152,11 +153,11 @@
   <!--TOP THREE STRANDS -->
 
   <section id="topThree">
-    <div class="container pt-0 pt-xl-5 ">
+    <div class="container pt-4 pt-xl-5 ">
       <div class="row align-items-center pt-5">
         <div class="col-md-8 text-center text-md-start mx-auto">
           <div class="text-center">
-            <h1 class=" display-4 mb-5"><span class="top-three underline-thick">TOP THREE STRAND</span><span
+            <h1 class=" display-4 mb-5 mt-5"><span class="top-three underline-thick">TOP THREE STRAND</span><span
                 class="strand-reco">&nbsp;<br/>
                 SYSTEM RECOMMENDATION </span></h1>
             <p class="fs-5 text-muted mb-5">It indicates here the selection of three suggestions based on specific
@@ -215,14 +216,14 @@
 <!--SYSTEM RECOMMENDATION-->
   <section>
     <div class="container mt-3">
-      <div class="row row-cols-md-3 mx-auto pt-xl-5">
+      <div class="row row-cols-md-3 mx-auto pt-xl-5"  id="card-row">
         <div class="col-lg-4 col-xl-4 mb-5">
           <div class="text-center">
             <img class="float-start" id="numbers" src="assets/img/numbers/1.png">
             <div class="card bg-light shadow border rounded">
               <img class="card-img-top w-100 d-block" id="strands" src="assets/img/strands/STEM.jpg">
               <div class="card-body">
-                <p class="card-text">STEM strand: Focuses on science, technology, engineering, and math for future
+                <p id="txtStrands" class="card-text">STEM strand: Focuses on science, technology, engineering, and math for future
                   careers or higher education in these fields.</p>
                   <button class="btn btn-warning btn-sm shadow float-end" type="button" data-toggle="modal" data-target="#strandModal" onclick="showStrand('STEM')" style="font-size: 0.75rem;">
                     Read more >>
@@ -239,7 +240,7 @@
             <div class="card bg-light shadow border rounded">
               <img class="card-img-top w-100 d-block" id="strands" src="assets/img/strands/HUMSS.jpg">
               <div class="card-body">
-                <p class="card-text">The HUMSS strand explores society, culture, and human behavior through subjects like literature, economics, sociology, psychology, and political science.</p>
+                <p id="txtStrands" class="card-text">The HUMSS strand explores society, culture, and human behavior through subjects like literature, economics, sociology, psychology, and political science.</p>
                 <button class="btn btn-warning btn-sm shadow float-end" type="button"  data-toggle="modal" data-target="#strandModal" onclick="showStrand('HUMSS')" style="font-size: 0.75rem;">
                   Read more >>
               </button>
@@ -254,7 +255,7 @@
             <div class="card bg-light shadow border rounded">
               <img class="card-img-top w-100 d-block" id="strands" src="assets/img/strands/ABM.jpg" width="385" height="385">
               <div class="card-body">
-                <p class="card-text">The ABM strand provides an understanding of accounting, finance, marketing, and entrepreneurial skills crucial for future careers in commerce, finance, and entrepreneurship.</p>
+                <p id="txtStrands" class="card-text">The ABM strand provides an understanding of accounting, finance, marketing, and entrepreneurial skills crucial for future careers in commerce, finance, and entrepreneurship.</p>
                 <button class="btn btn-warning btn-sm shadow float-end" type="button" data-toggle="modal" data-target="#strandModal" onclick="showStrand('ABM')" style="font-size: 0.75rem;">
                   Read more >>
               </button>
@@ -285,15 +286,15 @@
       </div>
     </div>
 
-    <div class="container mt-3">
-      <div class="row row-cols-md-3 mx-auto pt-xl-5">
+    <div class="container mt-3"> 
+      <div class="row row-cols-md-3 mx-auto pt-xl-5"  id="card-row">
         <div class="col-lg-4 col-xl-4 mb-5">
           <div class="text-center">
             <img class="float-start" id="numbers" src="assets/img/numbers/1.png">
             <div class="card bg-light shadow border rounded">
               <img class="card-img-top w-100 d-block" id="strands" src="assets/img/strands/STEM.jpg">
               <div class="card-body">
-                <p class="card-text">STEM strand: Focuses on science, technology, engineering, and math for future
+                <p id="txtStrands" class="strands card-text ">STEM strand: Focuses on science, technology, engineering, and math for future
                   careers or higher education in these fields.</p>
                 
               </div>
@@ -307,7 +308,7 @@
             <div class="card bg-light shadow border rounded">
               <img class="card-img-top w-100 d-block" id="strands" src="assets/img/strands/HUMSS.jpg">
               <div class="card-body">
-                <p class="card-text">The HUMSS strand explores society, culture, and human behavior through subjects like literature, economics, sociology, psychology, and political science.</p>
+                <p id="txtStrands" class="card-text">The HUMSS strand explores society, culture, and human behavior through subjects like literature, economics, sociology, psychology, and political science.</p>
                
               </div>
             </div>
@@ -320,7 +321,7 @@
             <div class="card bg-light shadow border rounded">
               <img class="card-img-top w-100 d-block" id="strands" src="assets/img/strands/ABM.jpg" width="385" height="385">
               <div class="card-body">
-                <p class="card-text">The ABM strand provides an understanding of accounting, finance, marketing, and entrepreneurial skills crucial for future careers in commerce, finance, and entrepreneurship.</p>
+                <p id="txtStrands" class="card-text">The ABM strand provides an understanding of accounting, finance, marketing, and entrepreneurial skills crucial for future careers in commerce, finance, and entrepreneurship.</p>
               </div>
             </div>
           </div>
@@ -346,8 +347,8 @@
         </div>
     </section>-->
   <section></section>
-  <section class="bg-light" id="team">
-    <div class="container">
+  <section class="bg-light p-5 mt-4" id="team">
+    <div class="container mt-5 py-3">
       <h2 class="mb-5" style="text-align: center;">Testimonials: What People Are Saying...</h2>
       <div class="row" id="testimonialsRow">
        <!--will be added here the testimonials by shuffled-->
