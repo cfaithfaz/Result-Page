@@ -162,7 +162,7 @@ function showStrand(strand) {
                     <div class="col-md-6" style="list-style-position:inside; text-align: left;">
                         <h2 style="font-weight: bold;">HUMSS CAREER</h2>
                         <h6>Bachelor of Art</h6>
-                        <ul>
+                        <ul class="list-course>
                             <li>Philosophy (AB Philosophy)</li>
                             <li>English (AB English)</li>
                             <li>Linguistics (AB Linguistics)</li>
@@ -181,7 +181,7 @@ function showStrand(strand) {
 
                             <h2 style="font-weight: bold;">Job Opportunities</h2>
                             <br>
-                            <ul>
+                            <ul class="list-course>
                                 <li>Teacher</li>
                                 <li>Lawyer</li>
                                 <li>Psychologist</li>
@@ -200,7 +200,7 @@ function showStrand(strand) {
                         </div>
                         <div class="col-md-6">
                             <br><br><br>
-                            <ul>
+                            <ul class="list-course>
 
                                 <li>Editor/Writer</li>
                                 <li>Geologist</li>
@@ -266,7 +266,7 @@ function showStrand(strand) {
 
                         <h2 style="font-weight: bold;">Business</h2>
                         <h6>Bachelor of Science Business Administration Majors</h6>
-                        <ul>
+                        <ul class="list-course>
                             <li>Business Economics (BSBA)</li>
                             <li>Financial Management (BSBA major in FM)</li>
                             <li>Human Resource Development (BSBA major in HRDM)</li>
@@ -282,7 +282,7 @@ function showStrand(strand) {
 
                         <h2 style="font-weight: bold;">Management</h2>
                         <h6>Bachelor of Science</h6>
-                        <ul>
+                        <ul class="list-course>
                             <li>Hotel and Restaurant Management (BS HRM)</li>
                             <li>Office Administration (BSOA)</li>
                             <li>Real Estate Management (BS REM)</li>
@@ -303,7 +303,7 @@ function showStrand(strand) {
 
                         <h2 style="font-weight: bold;">Job Opportunities</h2>
                         <br>
-                        <ul>
+                        <ul class="list-course>
                             <li>Hotel and Restaurant Management (BS HRM)</li>
                             <li>Office Administration (BSOA)</li>
                             <li>Real Estate Management (BS REM)</li>
@@ -313,7 +313,7 @@ function showStrand(strand) {
                     </div>
                     <div class="col-md-6" style="list-style-position:inside; text-align: left;">
                         <br><br><br>
-                        <ul>
+                        <ul class="list-course>
 
                             <li>Community Development (BS Community Development)</li>
                             <li>Foreign Service (BS Foreign Service)</li>
