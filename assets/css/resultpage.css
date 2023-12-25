@@ -269,7 +269,8 @@ font-weight: bold;
 #intro-text{
 
   font-size: 20px;
-  font-family:'Montserrat'
+  font-family:'Montserrat Light',sans-serif;
+  font-weight: lighter;
 }
 
 #head-text{
